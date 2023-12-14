@@ -1,0 +1,1 @@
+pdf2text $1 | ollama run alfred "summarize this"

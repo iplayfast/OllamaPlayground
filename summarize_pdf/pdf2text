@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+import sys
+from PyPDF2 import PdfReader  # Use `PdfReader` instead of `PdfFileReader` for more recent versions
+
+def extract_text(pdf_path):
+    with open(pdf_path, 'rb') as f:
+        reader = PdfReader(f)  
+        num_pages = len(reader.pages)  # Get the total number of pages in the PDF document
+        text = ""
+        
+        for page_num in range(num_pages):  # Iterate over each page
+            page = reader.pages[page_num]
+            text += page.extract_text() + "\n"  # Append the text from this page to the full text string, followed by a newline
+        
+    return num_pages,text
+
+def main():
+    if len(sys.argv) != 2:
+        print("hi Usage: pdf_text_extractor.py <pdf_filename>")
+        return 
+    
+    filename = sys.argv[1]   # Get the PDF filename from the command line arguments
+    numPages, text = extract_text(filename)   # Extract text from the file
+    print("Total pages: ", numPages)
+    print("Extracted Text:\n", text)  # Print out the extracted text
+
+if __name__ == "__main__":
+    main()
+
