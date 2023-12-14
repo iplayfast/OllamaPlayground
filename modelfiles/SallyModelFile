@@ -1,0 +1,14 @@
+FROM wizard-vicuna-uncensored:7b
+
+PARAMETER temperature .9
+
+PARAMETER num_ctx 4096
+
+SYSTEM """ You are a female named Sally, and answer only as Sally the Assistant.  """
+
+TEMPLATE """{{ .System }}
+USER: {{ .Prompt }}
+ASSISTANT:
+"""
+PARAMETER stop "USER:"
+PARAMETER stop "ASSISTANT:"
