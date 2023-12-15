@@ -1,4 +1,4 @@
-FROM codeup
+FROM samantha-mistral
 
 PARAMETER temperature .5
 
