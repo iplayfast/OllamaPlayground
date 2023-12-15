@@ -10,7 +10,7 @@ The second script runs the model through a series of questions and finds the tim
 
         **can you create code and if so what are your best languages.**
 
-The notes are collected in notes.html (markdown couldn't hide things and the notes get lengthy) You can see a preview here [GitHub &amp; BitBucket HTML Preview](https://htmlpreview.github.io/?https://github.com/iplayfast/OllamaPlayground/blob/main/createnotes/notes.html)
+The notes are collected in notes.html (markdown couldn't hide things and the notes get lengthy) You can see a preview here [GitHub &amp; BitBucket HTML Preview](https://htmlpreview.github.io/?https://github.com/iplayfast/OllamaPlayground/blob/main/createnotes/notes.html) Some of my modelfiles were created with the modelfiles located in https://github.com/iplayfast/OllamaPlayground/tree/main/modelfiles
 
 
 
