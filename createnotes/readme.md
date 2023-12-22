@@ -1,43 +1,62 @@
-# CreateNotes Find about the models in your Ollama system
+# CreateNotes: Find Out About the Models in Your Ollama System
 
-This directory contains four shell scripts. 
+**Introduction**
 
-The first set of two CreateNotesOfAllModels.sh and CreateNotesOfModel.sh
+This project interrogates all models in your system and evaluates how they respond to a series of questions.
 
-work together to create an html page showing how all the models on your system react to a set of questions. Together they create **notes.html**
+There are two Python modules: `CreateNotes.py` for querying all the models in your system, and `ViewResults.py` for displaying the results.
 
+`CreateNotes.py` generates a file called `results.json`.
 
+`ViewResults.py` uses `results.json` to display a graph and heat map, followed by a webpage showing the results in graph form. This webpage also provides hints about the questions, answers, and timing of the results.
 
-The second set of two,   CreateNotesOfModel.sh      CreateTableOfModel.sh  
+`CreateNotes.py` retrieves a list of Ollama models currently on your system. For each model, it queries a range of questions and categories. The module expects the Mistral model to be installed on your system, as Mistral critiques the answers given by other models.
 
-work together to create an html page of a table showing how all teh models on your system react to a set of questions. Together they create **table.html**
-
-They both work in a similar way, the only difference is the output. 
-
-
-
-CreateTableOfAllModels.sh or CreateNotesOfAllModels.sh are the main script. 
-
-They find the list of ollama models, and for each one calls the second script.
-
-The second script runs the model through a series of questions and finds the time for each question. The questions are any text files that start with q. 
-
-     For example q3whatlanguage.txt contains the following text:
-
-        **can you create code and if so what are your best languages.**
-
-The notes are collected in notes.html (markdown couldn't hide things and the notes get lengthy) You can see a notes preview here [GitHub &amp; BitBucket HTML Preview](https://htmlpreview.github.io/?https://github.com/iplayfast/OllamaPlayground/blob/main/createnotes/notes.html) or a table preview here GitHub & BitBucket HTML Preview]([GitHub &amp; BitBucket HTML Preview](https://htmlpreview.github.io/?https://github.com/iplayfast/OllamaPlayground/blob/main/createnotes/table.html))Some of my modelfiles were created with the modelfiles located in https://github.com/iplayfast/OllamaPlayground/tree/main/modelfiles
-
-On a linux system this can be run from the command line 
+Questions are stored in `questions.json` in the following format:
 
 ```
-./CreateNotesOfAllModels.sh
-or
-./CreateTableOfAllModels.sh
+[
+    {
+        "question": "hello",
+        "answer": "hello",
+        "special_instructions": ""
+    },
+    {
+        "question": "what areas of knowledge do you have?",
+        "answer": "",
+        "special_instructions": ""
+    },
+    {
+        "question": "what is the answer to 10 + 2 * 5 - 1",
+        "answer": "the correct answer is 19",
+        "special_instructions": "check that the answer is 19"
+    },
+    {
+        "question": "Create a python program to capture a wave file when sound is happening, when done print the name of the wave file",
+        "answer": "",
+        "special_instructions": "evaluate code for errors"
+    },
+...
 ```
 
-and then you can browse to your local file system and watch your notes.html be created as the questions are answered.
+If an answer is provided, it is checked for correctness against the model's response, then 'You believe the best answer is ...' is added to the critique prompt.
 
-New questions can be added as much as you like. The only stipulation is the filename  starts with 'q' for question. They are answered in alphabetical order.
+If special instructions are provided, they are included in the critique prompt.
 
+Each answer is critiqued by Mistral in regards to categories such as Humor, Sincerity, Logic, and Code Correctness, and given a rating from 0 to 100, with 100 being the best. A category that does not match the answer at all is given a 0 rating. Each rating is accompanied by an explanation and the time taken to generate the answer.
 
+**Getting Started**
+
+To run, set up a new Conda environment (e.g., `conda create -n notes python==3.11`):
+
+bashCopy code
+
+`conda create -n modelnotes python==3.11 conda activate modelnotes pip install -r requirements.txt python CreateNotes.py`
+
+While `CreateNotes.py` is running, the `results.json` can be viewed:
+
+bashCopy code
+
+`python ViewResults.py`
+
+New questions can be added to the `questions.json` file as desired.
