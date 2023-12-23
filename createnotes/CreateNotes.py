@@ -98,6 +98,9 @@ def load_questions(filename):
     with open(filename, 'r') as file:
         return json.load(file)
 
+def round_to_nearest_tenth(num):
+    return round(num, 1)
+
 # Usage in your loop
 
 l = get_model_list()
@@ -106,8 +109,20 @@ l = get_model_list()
 allfiles = os.listdir()
 qfiles = sorted([f for f in allfiles if f.startswith('q')])
 critic_cats = ['Humor','Sincerity','Logic','code correctness']
-
-
+print("Attempting to load each model to see if they can be loaded")
+for model in l:
+    model_name = model['name']
+    print(f"   attempting to load model {model_name}")
+    ollama = Ollama(base_url='http://localhost:11434',model=model_name)
+    answer, elapsed = get_answer(ollama,'are you there',300) #timeout is 5 minutes
+    if answer.__contains__('No Answer'):
+        l.remove(model)
+    
+    loaded = '------------not loaded------------' if answer.__contains__('No Answer') else 'loaded'
+    answer_time = str(round_to_nearest_tenth(elapsed))
+    print(f"         model {model_name} {loaded} in {answer_time} seconds")    
+    
+print("Only working models are tested")
 results = {}
 for model in l:
     model_name = model['name']
