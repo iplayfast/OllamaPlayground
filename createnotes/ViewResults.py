@@ -2,6 +2,7 @@ import json
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import plotly.express as px
 
 def to_lowercase(item):
     if isinstance(item, dict):
@@ -72,7 +73,7 @@ for model, entries in data.items():
 # Convert to DataFrame
 df = pd.DataFrame(cleaned_data)
 
-
+"""
 # Create a subplot environment with 2 rows and 1 column
 fig, axes = plt.subplots(2, 1, figsize=(15, 20))
 
@@ -101,8 +102,7 @@ plt.title('Ratings vs Category with Answer Time')
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
-
-import plotly.express as px
+"""
 
 # Assuming df is your DataFrame
 
