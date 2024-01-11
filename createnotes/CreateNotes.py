@@ -15,7 +15,8 @@ import time
 
 BASE_URL = os.environ.get('OLLAMA_HOST', 'http://localhost:11434')
 
-mistral_ollama = Ollama(base_url='http://localhost:11434',model="mistral",verbose=False,temperature=0.0)
+CriticOllama = Ollama(base_url='http://localhost:11434',model="mistral",verbose=False,temperature=0.0)
+#CriticOllama = Ollama(base_url='http://localhost:11434',model="tinyllama",verbose=False,temperature=0.0)
 
 def save_results_to_file(results, filename='results.json'):
     """Save the current state of results to a JSON file."""
@@ -28,14 +29,18 @@ def get_model_list():
         response.raise_for_status()
         data = response.json()
         models = data.get('models', [])
-        return models
+        
+        # Sort the list of models by size (largest to smallest)
+        sorted_models = sorted(models, key=lambda x: x['size'], reverse=True)
+
+        return sorted_models
     except requests.exceptions.RequestException as e:
         print(f"An error occurred: {e}")
         return None
 
 import concurrent.futures
 
-def get_answer(ollama, question, timeout=100):
+def get_answer(ollama, question, timeout=1000):
     start_time = time.time()
     result = ''
     """Get an answer from the Ollama model with a timeout."""
@@ -54,41 +59,68 @@ def get_answer(ollama, question, timeout=100):
     return result.strip(), elapsed_time
 # Usage in your loop remains the same
 
+def extract_code(content):
+    # Regular expression to match content within triple backticks, ignoring language specifier
+    pattern = r"```(?:[^\r\n]+)?\n(.*?)```"
+
+    # Find all non-overlapping matches in the string
+    matches = re.findall(pattern, content, re.DOTALL)
+    
+    if matches:
+        extracted_content = ""
+        for match in matches:
+            # Add each match to the result with a newline in between
+            extracted_content += f"{match}\n\n"
+        
+        return extracted_content.strip()  # Remove trailing newlines
+    else:
+        return None
+
     
 def get_criticism(category, question_text, answer,critics_answer,special_instructions=None):    
     if (len(critics_answer)>0):
-        critics_answer = "You believe the best answer is '" + critics_answer + "'"
-        
-    prompt = (
+        critics_answer = "You believe the best answer is '" + critics_answer + "' "
+    if (category=='code correctness'):
+        answer = extract_code(answer)
+        if (answer is None):
+            return '0 code correctness', 'no code'
+        prompt = (
+            f"Evaluate the following code contained between lines of triple ticks (```) for correctness as a result of the question '{question_text}'. The code answer is '{answer}'. "
+            "Rate the answer on a scale from 1 to 100. Explain your reasoning for your rating. "            
+            "If the answer does have code, rate the code from 1 to 100 in how correct it is in answering the question."
+            f"Always format your answer in the form of 'rating {category} reason'"
+            f"For example, if you think the answer is correct, reply '100 {category}' followed by the reason "
+            f"For example, if you think the answer is incorrect, reply '1 {category}' followed by the reason "
+            f"For example, if the answer contains no python, c++ or other programming language code reply '0 {category} no code' followed by the reason "
+        )
+    else:
+        prompt = (
     f"Rate the answer below on a scale from 1 to 100, where 1 is the worst and 100 is the best. Explain your reasoning for your rating. "
     f"The category is '{category}', and the question was '{question_text}'. "
     f"Answer: '{answer}'.  {critics_answer}"
     "Provide your rating as a single number followed by the category followed by the reason, do not consider any other categories."
     "An answer that does not apply to the category should receive a rating of '0 N/A' followed by the reason "
-    "For example, if you think the answer is sincere and not humorous at all and the category is 'humor', reply '0 N/A not humorous at all' "
-    "if you think the answer in the humor category is excellent, reply '100 humor' followed by the reason "
-    "If you think the answer is only a little funny in the humor category, reply '1 humor' followed by the reason "
-    "If you cannot rate the answer or feel the category does not apply to the answer, reply '0 N/A' followed by the reason "
-    "If the category is about 'code correctness' and the answer has no code, reply '0 N/A' followed by the reason "
-    "If the answer answers the question correctly, give your rating at least a 50 "
+    "For example, if you think the answer is sincere and not humorous at all and the category is 'humor', reply '0 N/A not humorous at all' "    
+    f"For example, if you think the answer in the {category} category is excellent, reply '100 {category}' followed by the reason "    
+    f"For example, if you think the answer in the {category} category is barely acceptable, reply '1 {category}' followed by the reason "
+    f"For example, if you think the answer in the {category} category is acceptable but could be better, reply '50 {category}' followed by the reason "
+    "If you cannot rate the answer or feel the category does not apply to the answer, reply '0 N/A' followed by the reason "        
+    "If the answer answers the question correctly, give your rating at least a 10 "
+    "Ratings should be in a range 1 to 100, with 1 being the worst and 100 being the best. "
     f"Explain your reasoning or your rating. {special_instructions}"
 )
 
-    explanation,elapsed_time = get_answer(mistral_ollama, prompt)    
-    prompt = (
-        f"Extract the rating from the following text and present it in terms of a single number '{explanation}'. Do not include ANY other text, I only want a number."
-        "For example '80'"
-        "If your answer contains text other then a number a kitten dies, do not KILL kittens. Just give me the number"
-        "If your answer contains only a number, then you will be awarded 2000 dollars"
-    )
-
+    #explanation,elapsed_time = get_answer(mistral_ollama, prompt)    
+    explanation,elapsed_time = get_answer(CriticOllama, prompt)    
+    
     #rating =  get_answer(mistral_ollama, prompt).strip() 
     
     if explanation.__contains__('No Answer'):
         explanation = '0 ' + explanation    
-
     # Regular expression to find all numbers
     numbers = re.findall(r'\d+', explanation)
+    if not numbers:
+        numbers = ['0']
     rating = numbers[0] + ' ' + category  
     return rating, explanation
 
@@ -108,7 +140,8 @@ l = get_model_list()
 
 allfiles = os.listdir()
 qfiles = sorted([f for f in allfiles if f.startswith('q')])
-critic_cats = ['Humor','Sincerity','Logic','code correctness']
+critic_cats = ['Humor','Sincerity','Logic','code correctness','Simplicity','accuracy','complexity','legality']
+"""
 print("Attempting to load each model to see if they can be loaded")
 for model in l:
     model_name = model['name']
@@ -123,6 +156,7 @@ for model in l:
     print(f"         model {model_name} {loaded} in {answer_time} seconds")    
     
 print("Only working models are tested")
+"""
 results = {}
 for model in l:
     model_name = model['name']
@@ -132,13 +166,13 @@ for model in l:
     print(model_name)
     ollama = Ollama(base_url='http://localhost:11434',model=model_name)
     questions_and_answers = load_questions('questions.json')    
-    timeout = 1000 # first timeout is longer to allow the model to load
+    timeout = 5000 # first timeout is longer to allow the model to load
     for qa in questions_and_answers:
         question_text = qa['question'].strip()
         correct_answer = qa['answer'].strip()        
         special_instructions = qa['special_instructions'].strip()
         answer,answer_time = get_answer(ollama, question_text, timeout)
-        timeout = 500 # second timeout is shorter since the model is ready
+        timeout = 1500 # second timeout is shorter since the model is ready
         criticisms = []
         explanations = []
         # Iterate over each category and get criticism and explanation
