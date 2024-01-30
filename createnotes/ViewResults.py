@@ -54,12 +54,15 @@ for model, entries in data.items():
         explanations = entry.get('explanation', [])  # Get explanations, default to empty list if not present
         wrapped_explanations = join_explanations(explanations)  # Process explanations
         answer_time = str(round_to_nearest_tenth(entry['answer_time'])) + ' sec'
-        
+
         for criticism in entry['criticisms']:
             # Extract rating and category from criticism
             parts = criticism.split(" ")
             try:
                 rating = int(parts[0])
+                if rating>100: #bad data
+                    rating = -1;
+
                 category = " ".join(parts[1:])
                 cleaned_data.append({
                     "Model": model,

@@ -140,7 +140,8 @@ l = get_model_list()
 
 allfiles = os.listdir()
 qfiles = sorted([f for f in allfiles if f.startswith('q')])
-critic_cats = ['Humor','Sincerity','Logic','code correctness','Simplicity','accuracy','complexity','legality']
+#critic_cats = ['Humor','Sincerity','Logic','code correctness','Simplicity','accuracy','complexity','legality']
+critic_cats = ['Logic','code correctness','Simplicity','accuracy','complexity','completeness']
 """
 print("Attempting to load each model to see if they can be loaded")
 for model in l:
