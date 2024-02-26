@@ -8,6 +8,6 @@ def save_markdown(task_output):
     filename = f"{today_date}.md"
     #write the task output to the markdown file
     with open(filename,'w') as file:
-        file.write(task_output.exported_output) #result)
+        file.write(task_output.raw_output) #result)
     print(f"Newsletter saved as {filename}")
     
