@@ -1,1 +1,4 @@
 conda activate programcreator
+switching to venv
+to activate 
+source programcreator/bin/activate

@@ -1,0 +1,4 @@
+
+ npm install ollama
+
+bun run fs.ts

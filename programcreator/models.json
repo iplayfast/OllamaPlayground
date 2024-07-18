@@ -48,20 +48,6 @@
         ]
     },
     {
-        "name": "Mario:latest",
-        "rating": 0.7193433264248295,
-        "size": 0.7193433264248295,
-        "category": "llama"
-    },
-    {
-        "name": "MrT:latest",
-        "rating": 0.7193433295792481,
-        "size": 0.7193433295792481,
-        "category": [
-            "llama"
-        ]
-    },
-    {
         "name": "Polly:latest",
         "rating": 0.7386808125240507,
         "size": 0.7386808125240507,
@@ -71,14 +57,6 @@
         "name": "Sally:latest",
         "rating": 0.7193424487601109,
         "size": 0.7193424487601109,
-        "category": [
-            "llama"
-        ]
-    },
-    {
-        "name": "Ted:latest",
-        "rating": 0.7386808239080731,
-        "size": 0.7386808239080731,
         "category": [
             "llama"
         ]
@@ -108,8 +86,8 @@
     },
     {
         "name": "codegemma:latest",
-        "rating": 0.7857595250818015,
-        "size": 0.7857595250818015,
+        "rating": 0.7857595059312525,
+        "size": 0.7857595059312525,
         "category": [
             "gemma"
         ]
@@ -132,12 +110,6 @@
         "name": "codellama:latest",
         "rating": 0.7193500013827558,
         "size": 0.7193500013827558,
-        "category": "llama"
-    },
-    {
-        "name": "codeup:latest",
-        "rating": 0.8542267401346919,
-        "size": 0.8542267401346919,
         "category": "llama"
     },
     {
@@ -298,16 +270,16 @@
     },
     {
         "name": "llama3:70b",
-        "rating": 0.9731361354536221,
-        "size": 0.9731361354536221,
+        "rating": 0.9731361355288979,
+        "size": 0.9731361355288979,
         "category": [
             "llama"
         ]
     },
     {
         "name": "llama3:latest",
-        "rating": 0.7696438350296562,
-        "size": 0.7696438350296562,
+        "rating": 0.7696438389832294,
+        "size": 0.7696438389832294,
         "category": [
             "llama"
         ]
@@ -335,24 +307,24 @@
     },
     {
         "name": "mistral:7b",
-        "rating": 0.7387403770051523,
-        "size": 0.7387403770051523,
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
         "category": [
             "llama"
         ]
     },
     {
         "name": "mistral:instruct",
-        "rating": 0.7387403770051523,
-        "size": 0.7387403770051523,
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
         "category": [
             "llama"
         ]
     },
     {
         "name": "mistral:latest",
-        "rating": 0.7387403770051523,
-        "size": 0.7387403770051523,
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
         "category": [
             "llama"
         ]
@@ -364,12 +336,6 @@
         "category": [
             "llama"
         ]
-    },
-    {
-        "name": "mistrallite:latest",
-        "rating": 0.7386811690533537,
-        "size": 0.7386811690533537,
-        "category": "llama"
     },
     {
         "name": "mixtral:latest",
@@ -516,20 +482,6 @@
         ]
     },
     {
-        "name": "samantha-mistral:latest",
-        "rating": 0.7386808127784423,
-        "size": 0.7386808127784423,
-        "category": "llama"
-    },
-    {
-        "name": "solar:latest",
-        "rating": 0.8231762377527201,
-        "size": 0.8231762377527201,
-        "category": [
-            "llama"
-        ]
-    },
-    {
         "name": "sqlcoder:latest",
         "rating": 0.7386800702709306,
         "size": 0.7386800702709306,
@@ -624,12 +576,6 @@
         "category": "llama"
     },
     {
-        "name": "xwinlm:latest",
-        "rating": 0.7193428524542853,
-        "size": 0.7193428524542853,
-        "category": "llama"
-    },
-    {
         "name": "yarn-mistral:latest",
         "rating": 0.7386800690625638,
         "size": 0.7386800690625638,
@@ -637,8 +583,8 @@
     },
     {
         "name": "yi:latest",
-        "rating": 0.6913953551177296,
-        "size": 0.6913953551177296,
+        "rating": 0.6913948503467904,
+        "size": 0.6913948503467904,
         "category": [
             "llama"
         ]
@@ -700,20 +646,6 @@
         ]
     },
     {
-        "name": "Mario:latest",
-        "rating": 0.7193433264248295,
-        "size": 0.7193433264248295,
-        "category": "llama"
-    },
-    {
-        "name": "MrT:latest",
-        "rating": 0.7193433295792481,
-        "size": 0.7193433295792481,
-        "category": [
-            "llama"
-        ]
-    },
-    {
         "name": "Polly:latest",
         "rating": 0.7386808125240507,
         "size": 0.7386808125240507,
@@ -723,14 +655,6 @@
         "name": "Sally:latest",
         "rating": 0.7193424487601109,
         "size": 0.7193424487601109,
-        "category": [
-            "llama"
-        ]
-    },
-    {
-        "name": "Ted:latest",
-        "rating": 0.7386808239080731,
-        "size": 0.7386808239080731,
         "category": [
             "llama"
         ]
@@ -760,8 +684,8 @@
     },
     {
         "name": "codegemma:latest",
-        "rating": 0.7857595250818015,
-        "size": 0.7857595250818015,
+        "rating": 0.7857595059312525,
+        "size": 0.7857595059312525,
         "category": [
             "gemma"
         ]
@@ -784,12 +708,6 @@
         "name": "codellama:latest",
         "rating": 0.7193500013827558,
         "size": 0.7193500013827558,
-        "category": "llama"
-    },
-    {
-        "name": "codeup:latest",
-        "rating": 0.8542267401346919,
-        "size": 0.8542267401346919,
         "category": "llama"
     },
     {
@@ -950,16 +868,16 @@
     },
     {
         "name": "llama3:70b",
-        "rating": 0.9731361354536221,
-        "size": 0.9731361354536221,
+        "rating": 0.9731361355288979,
+        "size": 0.9731361355288979,
         "category": [
             "llama"
         ]
     },
     {
         "name": "llama3:latest",
-        "rating": 0.7696438350296562,
-        "size": 0.7696438350296562,
+        "rating": 0.7696438389832294,
+        "size": 0.7696438389832294,
         "category": [
             "llama"
         ]
@@ -987,24 +905,24 @@
     },
     {
         "name": "mistral:7b",
-        "rating": 0.7387403770051523,
-        "size": 0.7387403770051523,
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
         "category": [
             "llama"
         ]
     },
     {
         "name": "mistral:instruct",
-        "rating": 0.7387403770051523,
-        "size": 0.7387403770051523,
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
         "category": [
             "llama"
         ]
     },
     {
         "name": "mistral:latest",
-        "rating": 0.7387403770051523,
-        "size": 0.7387403770051523,
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
         "category": [
             "llama"
         ]
@@ -1016,12 +934,6 @@
         "category": [
             "llama"
         ]
-    },
-    {
-        "name": "mistrallite:latest",
-        "rating": 0.7386811690533537,
-        "size": 0.7386811690533537,
-        "category": "llama"
     },
     {
         "name": "mixtral:latest",
@@ -1168,20 +1080,6 @@
         ]
     },
     {
-        "name": "samantha-mistral:latest",
-        "rating": 0.7386808127784423,
-        "size": 0.7386808127784423,
-        "category": "llama"
-    },
-    {
-        "name": "solar:latest",
-        "rating": 0.8231762377527201,
-        "size": 0.8231762377527201,
-        "category": [
-            "llama"
-        ]
-    },
-    {
         "name": "sqlcoder:latest",
         "rating": 0.7386800702709306,
         "size": 0.7386800702709306,
@@ -1276,12 +1174,6 @@
         "category": "llama"
     },
     {
-        "name": "xwinlm:latest",
-        "rating": 0.7193428524542853,
-        "size": 0.7193428524542853,
-        "category": "llama"
-    },
-    {
         "name": "yarn-mistral:latest",
         "rating": 0.7386800690625638,
         "size": 0.7386800690625638,
@@ -1289,8 +1181,8 @@
     },
     {
         "name": "yi:latest",
-        "rating": 0.6913953551177296,
-        "size": 0.6913953551177296,
+        "rating": 0.6913948503467904,
+        "size": 0.6913948503467904,
         "category": [
             "llama"
         ]
@@ -1302,5 +1194,5493 @@
         "category": [
             "llama"
         ]
+    },
+    {
+        "name": "mistral:7b",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mistral:instruct",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mistral:latest",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gemma:latest",
+        "rating": 0.7857595237139052,
+        "size": 0.7857595237139052,
+        "category": [
+            "gemma"
+        ]
+    },
+    {
+        "name": "llama3:70b",
+        "rating": 0.9731361355288979,
+        "size": 0.9731361355288979,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3:latest",
+        "rating": 0.7696438389832294,
+        "size": 0.7696438389832294,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mixtral:latest",
+        "rating": 0.9593933035304308,
+        "size": 0.9593933035304308,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3-chatqa:latest",
+        "rating": 0.7696438184740668,
+        "size": 0.7696438184740668,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llava-phi3:latest",
+        "rating": 0.6331055792146523,
+        "size": 0.6331055792146523,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "llava-llama3:latest",
+        "rating": 0.806382373392201,
+        "size": 0.806382373392201,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "yi:latest",
+        "rating": 0.6913948503467904,
+        "size": 0.6913948503467904,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "moondream:latest",
+        "rating": 0.38235722472225375,
+        "size": 0.38235722472225375,
+        "category": [
+            "phi2",
+            "clip"
+        ]
+    },
+    {
+        "name": "codegemma:latest",
+        "rating": 0.7857595059312525,
+        "size": 0.7857595059312525,
+        "category": [
+            "gemma"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:70b",
+        "rating": 0.9731361507668531,
+        "size": 0.9731361507668531,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3-gradient:latest",
+        "rating": 0.7696438373029608,
+        "size": 0.7696438373029608,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mxbai-embed-large:latest",
+        "rating": -0.6035199800850486,
+        "size": -0.6035199800850486,
+        "category": [
+            "bert"
+        ]
+    },
+    {
+        "name": "phi3:3.8b-mini-instruct-4k-fp16",
+        "rating": 0.8595186211256102,
+        "size": 0.8595186211256102,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "phi3:latest",
+        "rating": 0.5369648775315836,
+        "size": 0.5369648775315836,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:8b-v2.9-fp16",
+        "rating": 0.9331790379527204,
+        "size": 0.9331790379527204,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:latest",
+        "rating": 0.7696443983136375,
+        "size": 0.7696443983136375,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "command-r-plus:latest",
+        "rating": 0.9818689334112891,
+        "size": 0.9818689334112891,
+        "category": [
+            "command-r"
+        ]
+    },
+    {
+        "name": "dbrx:latest",
+        "rating": 0.9855277086921039,
+        "size": 0.9855277086921039,
+        "category": [
+            "dbrx"
+        ]
+    },
+    {
+        "name": "qwen:latest",
+        "rating": 0.5391850644391412,
+        "size": 0.5391850644391412,
+        "category": [
+            "qwen2"
+        ]
+    },
+    {
+        "name": "stablelm2:latest",
+        "rating": -0.09254399947564806,
+        "size": -0.09254399947564806,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "dolphincoder:latest",
+        "rating": 0.7460775729896193,
+        "size": 0.7460775729896193,
+        "category": [
+            "starcoder2"
+        ]
+    },
+    {
+        "name": "starling-lm:latest",
+        "rating": 0.7386815706087386,
+        "size": 0.7386815706087386,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-mistral:latest",
+        "rating": 0.738681572961847,
+        "size": 0.738681572961847,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "command-r:latest",
+        "rating": 0.9469218316866266,
+        "size": 0.9469218316866266,
+        "category": [
+            "command-r"
+        ]
+    },
+    {
+        "name": "stable-code:latest",
+        "rating": 0.33249079467333387,
+        "size": 0.33249079467333387,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "mistral:text",
+        "rating": 0.7386808286143167,
+        "size": 0.7386808286143167,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "bakllava:latest",
+        "rating": 0.7731539975889645,
+        "size": 0.7731539975889645,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "starcoder2:latest",
+        "rating": 0.3720446506760715,
+        "size": 0.3720446506760715,
+        "category": [
+            "starcoder2"
+        ]
+    },
+    {
+        "name": "llava:latest",
+        "rating": 0.7731545760425991,
+        "size": 0.7731545760425991,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "hermesmistral:latest",
+        "rating": 0.7907516160025972,
+        "size": 0.7907516160025972,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nomic-embed-text:latest",
+        "rating": -2.9144448837405568,
+        "size": -2.9144448837405568,
+        "category": [
+            "nomic-bert"
+        ]
+    },
+    {
+        "name": "hexbenjamin/memgpt-dpo-uncensored:q8_0",
+        "rating": 0.8604781166673485,
+        "size": 0.8604781166673485,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gdisney/phi-uncensored:latest",
+        "rating": 0.3299437713235903,
+        "size": 0.3299437713235903,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "gdisney/starling-lm-uncensored:latest",
+        "rating": 0.738680991043215,
+        "size": 0.738680991043215,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gdisney/neural-chat-uncensored:latest",
+        "rating": 0.7387397513585026,
+        "size": 0.7387397513585026,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "all-minilm:latest",
+        "rating": -22.36202248532647,
+        "size": -22.36202248532647,
+        "category": [
+            "bert"
+        ]
+    },
+    {
+        "name": "codellama:70b",
+        "rating": 0.9723778066712903,
+        "size": 0.9723778066712903,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "codellama:7b",
+        "rating": 0.7193500013827558,
+        "size": 0.7193500013827558,
+        "category": "llama"
+    },
+    {
+        "name": "tinydolphin:latest",
+        "rating": -0.6863016922288472,
+        "size": -0.6863016922288472,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "duckdb-nsql:latest",
+        "rating": 0.7193491339562045,
+        "size": 0.7193491339562045,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nsfw:latest",
+        "rating": 0.9223742743647695,
+        "size": 0.9223742743647695,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nsfwstoryteller:latest",
+        "rating": 0.9223742743647695,
+        "size": 0.9223742743647695,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:70b",
+        "rating": 0.9723783781430271,
+        "size": 0.9723783781430271,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:13b",
+        "rating": 0.854246250974688,
+        "size": 0.854246250974688,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:7b",
+        "rating": 0.7194147600761807,
+        "size": 0.7194147600761807,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "orca-mini:latest",
+        "rating": 0.4576917555078759,
+        "size": 0.4576917555078759,
+        "category": "llama"
+    },
+    {
+        "name": "chris/openhermes-agent:latest",
+        "rating": 0.7907516112315884,
+        "size": 0.7907516112315884,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "openhermes-agent:latest",
+        "rating": 0.7907516112315884,
+        "size": 0.7907516112315884,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nexusraven:latest",
+        "rating": 0.8542495063920196,
+        "size": 0.8542495063920196,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nous-hermes2-mixtral:latest",
+        "rating": 0.9593933213379519,
+        "size": 0.9593933213379519,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama-pro:latest",
+        "rating": 0.7733173722946083,
+        "size": 0.7733173722946083,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "phi:latest",
+        "rating": 0.3299429885629498,
+        "size": 0.3299429885629498,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "zephyr:latest",
+        "rating": 0.7387397270114936,
+        "size": 0.7387397270114936,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "tinyllama:latest",
+        "rating": -0.6837722904805141,
+        "size": -0.6837722904805141,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "stablelm-zephyr:latest",
+        "rating": 0.33249062744117186,
+        "size": 0.33249062744117186,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "phind-codellama:latest",
+        "rating": 0.943641683469084,
+        "size": 0.943641683469084,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "neural-chat:latest",
+        "rating": 0.738739619261621,
+        "size": 0.738739619261621,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:latest",
+        "rating": 0.7194147600761807,
+        "size": 0.7194147600761807,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "everythinglm:latest",
+        "rating": 0.854246141899011,
+        "size": 0.854246141899011,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-mixtral:latest",
+        "rating": 0.959391883078472,
+        "size": 0.959391883078472,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-coder:latest",
+        "rating": -0.3835437857009121,
+        "size": -0.3835437857009121,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-coder:33b",
+        "rating": 0.9429451203154474,
+        "size": 0.9429451203154474,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "wizardcoder:latest",
+        "rating": 0.719342900504305,
+        "size": 0.719342900504305,
+        "category": "llama"
+    },
+    {
+        "name": "notus:latest",
+        "rating": 0.7387397298085392,
+        "size": 0.7387397298085392,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "openhermes:latest",
+        "rating": 0.7386808257524118,
+        "size": 0.7386808257524118,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "notux:latest",
+        "rating": 0.9593932877822178,
+        "size": 0.9593932877822178,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-phi:latest",
+        "rating": 0.3299473673158535,
+        "size": 0.3299473673158535,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "wizard-math:latest",
+        "rating": 0.7386807426935453,
+        "size": 0.7386807426935453,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "DrunkSally:latest",
+        "rating": 0.7193424577099126,
+        "size": 0.7193424577099126,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-llm:latest",
+        "rating": 0.7315963293994798,
+        "size": 0.7315963293994798,
+        "category": "llama"
+    },
+    {
+        "name": "yarn-mistral:latest",
+        "rating": 0.7386800690625638,
+        "size": 0.7386800690625638,
+        "category": "llama"
+    },
+    {
+        "name": "Sally:latest",
+        "rating": 0.7193424487601109,
+        "size": 0.7193424487601109,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "wizard-vicuna-uncensored:7b",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "wizardlm-uncensored:latest",
+        "rating": 0.8542267380764842,
+        "size": 0.8542267380764842,
+        "category": "llama"
+    },
+    {
+        "name": "orca2:latest",
+        "rating": 0.7193445415309809,
+        "size": 0.7193445415309809,
+        "category": "llama"
+    },
+    {
+        "name": "magicoder:latest",
+        "rating": 0.7193424914550612,
+        "size": 0.7193424914550612,
+        "category": "llama"
+    },
+    {
+        "name": "codellama:latest",
+        "rating": 0.7193500013827558,
+        "size": 0.7193500013827558,
+        "category": "llama"
+    },
+    {
+        "name": "orca2:13b",
+        "rating": 0.8542273902087836,
+        "size": 0.8542273902087836,
+        "category": "llama"
+    },
+    {
+        "name": "llama2-uncensored:latest",
+        "rating": 0.7193433102859423,
+        "size": 0.7193433102859423,
+        "category": "llama"
+    },
+    {
+        "name": "wizard-vicuna-uncensored:latest",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "Polly:latest",
+        "rating": 0.7386808125240507,
+        "size": 0.7386808125240507,
+        "category": "llama"
+    },
+    {
+        "name": "openhermes2.5-mistral:latest",
+        "rating": 0.7386808045107159,
+        "size": 0.7386808045107159,
+        "category": "llama"
+    },
+    {
+        "name": "codebooga:latest",
+        "rating": 0.943641662457532,
+        "size": 0.943641662457532,
+        "category": "llama"
+    },
+    {
+        "name": "medllama2:latest",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "sqlcoder:latest",
+        "rating": 0.7386800702709306,
+        "size": 0.7386800702709306,
+        "category": "llama"
+    },
+    {
+        "name": "mistral:7b",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mistral:instruct",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mistral:latest",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gemma:latest",
+        "rating": 0.7857595237139052,
+        "size": 0.7857595237139052,
+        "category": [
+            "gemma"
+        ]
+    },
+    {
+        "name": "llama3:70b",
+        "rating": 0.9731361355288979,
+        "size": 0.9731361355288979,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3:latest",
+        "rating": 0.7696438389832294,
+        "size": 0.7696438389832294,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mixtral:latest",
+        "rating": 0.9593933035304308,
+        "size": 0.9593933035304308,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3-chatqa:latest",
+        "rating": 0.7696438184740668,
+        "size": 0.7696438184740668,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llava-phi3:latest",
+        "rating": 0.6331055792146523,
+        "size": 0.6331055792146523,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "llava-llama3:latest",
+        "rating": 0.806382373392201,
+        "size": 0.806382373392201,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "yi:latest",
+        "rating": 0.6913948503467904,
+        "size": 0.6913948503467904,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "moondream:latest",
+        "rating": 0.38235722472225375,
+        "size": 0.38235722472225375,
+        "category": [
+            "phi2",
+            "clip"
+        ]
+    },
+    {
+        "name": "codegemma:latest",
+        "rating": 0.7857595059312525,
+        "size": 0.7857595059312525,
+        "category": [
+            "gemma"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:70b",
+        "rating": 0.9731361507668531,
+        "size": 0.9731361507668531,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3-gradient:latest",
+        "rating": 0.7696438373029608,
+        "size": 0.7696438373029608,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mxbai-embed-large:latest",
+        "rating": -0.6035199800850486,
+        "size": -0.6035199800850486,
+        "category": [
+            "bert"
+        ]
+    },
+    {
+        "name": "phi3:3.8b-mini-instruct-4k-fp16",
+        "rating": 0.8595186211256102,
+        "size": 0.8595186211256102,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "phi3:latest",
+        "rating": 0.5369648775315836,
+        "size": 0.5369648775315836,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:8b-v2.9-fp16",
+        "rating": 0.9331790379527204,
+        "size": 0.9331790379527204,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:latest",
+        "rating": 0.7696443983136375,
+        "size": 0.7696443983136375,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "command-r-plus:latest",
+        "rating": 0.9818689334112891,
+        "size": 0.9818689334112891,
+        "category": [
+            "command-r"
+        ]
+    },
+    {
+        "name": "dbrx:latest",
+        "rating": 0.9855277086921039,
+        "size": 0.9855277086921039,
+        "category": [
+            "dbrx"
+        ]
+    },
+    {
+        "name": "qwen:latest",
+        "rating": 0.5391850644391412,
+        "size": 0.5391850644391412,
+        "category": [
+            "qwen2"
+        ]
+    },
+    {
+        "name": "stablelm2:latest",
+        "rating": -0.09254399947564806,
+        "size": -0.09254399947564806,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "dolphincoder:latest",
+        "rating": 0.7460775729896193,
+        "size": 0.7460775729896193,
+        "category": [
+            "starcoder2"
+        ]
+    },
+    {
+        "name": "starling-lm:latest",
+        "rating": 0.7386815706087386,
+        "size": 0.7386815706087386,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-mistral:latest",
+        "rating": 0.738681572961847,
+        "size": 0.738681572961847,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "command-r:latest",
+        "rating": 0.9469218316866266,
+        "size": 0.9469218316866266,
+        "category": [
+            "command-r"
+        ]
+    },
+    {
+        "name": "stable-code:latest",
+        "rating": 0.33249079467333387,
+        "size": 0.33249079467333387,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "mistral:text",
+        "rating": 0.7386808286143167,
+        "size": 0.7386808286143167,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "bakllava:latest",
+        "rating": 0.7731539975889645,
+        "size": 0.7731539975889645,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "starcoder2:latest",
+        "rating": 0.3720446506760715,
+        "size": 0.3720446506760715,
+        "category": [
+            "starcoder2"
+        ]
+    },
+    {
+        "name": "llava:latest",
+        "rating": 0.7731545760425991,
+        "size": 0.7731545760425991,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "hermesmistral:latest",
+        "rating": 0.7907516160025972,
+        "size": 0.7907516160025972,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nomic-embed-text:latest",
+        "rating": -2.9144448837405568,
+        "size": -2.9144448837405568,
+        "category": [
+            "nomic-bert"
+        ]
+    },
+    {
+        "name": "hexbenjamin/memgpt-dpo-uncensored:q8_0",
+        "rating": 0.8604781166673485,
+        "size": 0.8604781166673485,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gdisney/phi-uncensored:latest",
+        "rating": 0.3299437713235903,
+        "size": 0.3299437713235903,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "gdisney/starling-lm-uncensored:latest",
+        "rating": 0.738680991043215,
+        "size": 0.738680991043215,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gdisney/neural-chat-uncensored:latest",
+        "rating": 0.7387397513585026,
+        "size": 0.7387397513585026,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "all-minilm:latest",
+        "rating": -22.36202248532647,
+        "size": -22.36202248532647,
+        "category": [
+            "bert"
+        ]
+    },
+    {
+        "name": "codellama:70b",
+        "rating": 0.9723778066712903,
+        "size": 0.9723778066712903,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "codellama:7b",
+        "rating": 0.7193500013827558,
+        "size": 0.7193500013827558,
+        "category": "llama"
+    },
+    {
+        "name": "tinydolphin:latest",
+        "rating": -0.6863016922288472,
+        "size": -0.6863016922288472,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "duckdb-nsql:latest",
+        "rating": 0.7193491339562045,
+        "size": 0.7193491339562045,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nsfw:latest",
+        "rating": 0.9223742743647695,
+        "size": 0.9223742743647695,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nsfwstoryteller:latest",
+        "rating": 0.9223742743647695,
+        "size": 0.9223742743647695,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:70b",
+        "rating": 0.9723783781430271,
+        "size": 0.9723783781430271,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:13b",
+        "rating": 0.854246250974688,
+        "size": 0.854246250974688,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:7b",
+        "rating": 0.7194147600761807,
+        "size": 0.7194147600761807,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "orca-mini:latest",
+        "rating": 0.4576917555078759,
+        "size": 0.4576917555078759,
+        "category": "llama"
+    },
+    {
+        "name": "chris/openhermes-agent:latest",
+        "rating": 0.7907516112315884,
+        "size": 0.7907516112315884,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "openhermes-agent:latest",
+        "rating": 0.7907516112315884,
+        "size": 0.7907516112315884,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nexusraven:latest",
+        "rating": 0.8542495063920196,
+        "size": 0.8542495063920196,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nous-hermes2-mixtral:latest",
+        "rating": 0.9593933213379519,
+        "size": 0.9593933213379519,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama-pro:latest",
+        "rating": 0.7733173722946083,
+        "size": 0.7733173722946083,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "phi:latest",
+        "rating": 0.3299429885629498,
+        "size": 0.3299429885629498,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "zephyr:latest",
+        "rating": 0.7387397270114936,
+        "size": 0.7387397270114936,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "tinyllama:latest",
+        "rating": -0.6837722904805141,
+        "size": -0.6837722904805141,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "stablelm-zephyr:latest",
+        "rating": 0.33249062744117186,
+        "size": 0.33249062744117186,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "phind-codellama:latest",
+        "rating": 0.943641683469084,
+        "size": 0.943641683469084,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "neural-chat:latest",
+        "rating": 0.738739619261621,
+        "size": 0.738739619261621,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:latest",
+        "rating": 0.7194147600761807,
+        "size": 0.7194147600761807,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "everythinglm:latest",
+        "rating": 0.854246141899011,
+        "size": 0.854246141899011,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-mixtral:latest",
+        "rating": 0.959391883078472,
+        "size": 0.959391883078472,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-coder:latest",
+        "rating": -0.3835437857009121,
+        "size": -0.3835437857009121,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-coder:33b",
+        "rating": 0.9429451203154474,
+        "size": 0.9429451203154474,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "wizardcoder:latest",
+        "rating": 0.719342900504305,
+        "size": 0.719342900504305,
+        "category": "llama"
+    },
+    {
+        "name": "notus:latest",
+        "rating": 0.7387397298085392,
+        "size": 0.7387397298085392,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "openhermes:latest",
+        "rating": 0.7386808257524118,
+        "size": 0.7386808257524118,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "notux:latest",
+        "rating": 0.9593932877822178,
+        "size": 0.9593932877822178,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-phi:latest",
+        "rating": 0.3299473673158535,
+        "size": 0.3299473673158535,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "wizard-math:latest",
+        "rating": 0.7386807426935453,
+        "size": 0.7386807426935453,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "DrunkSally:latest",
+        "rating": 0.7193424577099126,
+        "size": 0.7193424577099126,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-llm:latest",
+        "rating": 0.7315963293994798,
+        "size": 0.7315963293994798,
+        "category": "llama"
+    },
+    {
+        "name": "yarn-mistral:latest",
+        "rating": 0.7386800690625638,
+        "size": 0.7386800690625638,
+        "category": "llama"
+    },
+    {
+        "name": "Sally:latest",
+        "rating": 0.7193424487601109,
+        "size": 0.7193424487601109,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "wizard-vicuna-uncensored:7b",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "wizardlm-uncensored:latest",
+        "rating": 0.8542267380764842,
+        "size": 0.8542267380764842,
+        "category": "llama"
+    },
+    {
+        "name": "orca2:latest",
+        "rating": 0.7193445415309809,
+        "size": 0.7193445415309809,
+        "category": "llama"
+    },
+    {
+        "name": "magicoder:latest",
+        "rating": 0.7193424914550612,
+        "size": 0.7193424914550612,
+        "category": "llama"
+    },
+    {
+        "name": "codellama:latest",
+        "rating": 0.7193500013827558,
+        "size": 0.7193500013827558,
+        "category": "llama"
+    },
+    {
+        "name": "orca2:13b",
+        "rating": 0.8542273902087836,
+        "size": 0.8542273902087836,
+        "category": "llama"
+    },
+    {
+        "name": "llama2-uncensored:latest",
+        "rating": 0.7193433102859423,
+        "size": 0.7193433102859423,
+        "category": "llama"
+    },
+    {
+        "name": "wizard-vicuna-uncensored:latest",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "Polly:latest",
+        "rating": 0.7386808125240507,
+        "size": 0.7386808125240507,
+        "category": "llama"
+    },
+    {
+        "name": "openhermes2.5-mistral:latest",
+        "rating": 0.7386808045107159,
+        "size": 0.7386808045107159,
+        "category": "llama"
+    },
+    {
+        "name": "codebooga:latest",
+        "rating": 0.943641662457532,
+        "size": 0.943641662457532,
+        "category": "llama"
+    },
+    {
+        "name": "medllama2:latest",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "sqlcoder:latest",
+        "rating": 0.7386800702709306,
+        "size": 0.7386800702709306,
+        "category": "llama"
+    },
+    {
+        "name": "mistral:7b",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mistral:instruct",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mistral:latest",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gemma:latest",
+        "rating": 0.7857595237139052,
+        "size": 0.7857595237139052,
+        "category": [
+            "gemma"
+        ]
+    },
+    {
+        "name": "llama3:70b",
+        "rating": 0.9731361355288979,
+        "size": 0.9731361355288979,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3:latest",
+        "rating": 0.7696438389832294,
+        "size": 0.7696438389832294,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mixtral:latest",
+        "rating": 0.9593933035304308,
+        "size": 0.9593933035304308,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3-chatqa:latest",
+        "rating": 0.7696438184740668,
+        "size": 0.7696438184740668,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llava-phi3:latest",
+        "rating": 0.6331055792146523,
+        "size": 0.6331055792146523,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "llava-llama3:latest",
+        "rating": 0.806382373392201,
+        "size": 0.806382373392201,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "yi:latest",
+        "rating": 0.6913948503467904,
+        "size": 0.6913948503467904,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "moondream:latest",
+        "rating": 0.38235722472225375,
+        "size": 0.38235722472225375,
+        "category": [
+            "phi2",
+            "clip"
+        ]
+    },
+    {
+        "name": "codegemma:latest",
+        "rating": 0.7857595059312525,
+        "size": 0.7857595059312525,
+        "category": [
+            "gemma"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:70b",
+        "rating": 0.9731361507668531,
+        "size": 0.9731361507668531,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3-gradient:latest",
+        "rating": 0.7696438373029608,
+        "size": 0.7696438373029608,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mxbai-embed-large:latest",
+        "rating": -0.6035199800850486,
+        "size": -0.6035199800850486,
+        "category": [
+            "bert"
+        ]
+    },
+    {
+        "name": "phi3:3.8b-mini-instruct-4k-fp16",
+        "rating": 0.8595186211256102,
+        "size": 0.8595186211256102,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "phi3:latest",
+        "rating": 0.5369648775315836,
+        "size": 0.5369648775315836,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:8b-v2.9-fp16",
+        "rating": 0.9331790379527204,
+        "size": 0.9331790379527204,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:latest",
+        "rating": 0.7696443983136375,
+        "size": 0.7696443983136375,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "command-r-plus:latest",
+        "rating": 0.9818689334112891,
+        "size": 0.9818689334112891,
+        "category": [
+            "command-r"
+        ]
+    },
+    {
+        "name": "dbrx:latest",
+        "rating": 0.9855277086921039,
+        "size": 0.9855277086921039,
+        "category": [
+            "dbrx"
+        ]
+    },
+    {
+        "name": "qwen:latest",
+        "rating": 0.5391850644391412,
+        "size": 0.5391850644391412,
+        "category": [
+            "qwen2"
+        ]
+    },
+    {
+        "name": "stablelm2:latest",
+        "rating": -0.09254399947564806,
+        "size": -0.09254399947564806,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "dolphincoder:latest",
+        "rating": 0.7460775729896193,
+        "size": 0.7460775729896193,
+        "category": [
+            "starcoder2"
+        ]
+    },
+    {
+        "name": "starling-lm:latest",
+        "rating": 0.7386815706087386,
+        "size": 0.7386815706087386,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-mistral:latest",
+        "rating": 0.738681572961847,
+        "size": 0.738681572961847,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "command-r:latest",
+        "rating": 0.9469218316866266,
+        "size": 0.9469218316866266,
+        "category": [
+            "command-r"
+        ]
+    },
+    {
+        "name": "stable-code:latest",
+        "rating": 0.33249079467333387,
+        "size": 0.33249079467333387,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "mistral:text",
+        "rating": 0.7386808286143167,
+        "size": 0.7386808286143167,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "bakllava:latest",
+        "rating": 0.7731539975889645,
+        "size": 0.7731539975889645,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "starcoder2:latest",
+        "rating": 0.3720446506760715,
+        "size": 0.3720446506760715,
+        "category": [
+            "starcoder2"
+        ]
+    },
+    {
+        "name": "llava:latest",
+        "rating": 0.7731545760425991,
+        "size": 0.7731545760425991,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "hermesmistral:latest",
+        "rating": 0.7907516160025972,
+        "size": 0.7907516160025972,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nomic-embed-text:latest",
+        "rating": -2.9144448837405568,
+        "size": -2.9144448837405568,
+        "category": [
+            "nomic-bert"
+        ]
+    },
+    {
+        "name": "hexbenjamin/memgpt-dpo-uncensored:q8_0",
+        "rating": 0.8604781166673485,
+        "size": 0.8604781166673485,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gdisney/phi-uncensored:latest",
+        "rating": 0.3299437713235903,
+        "size": 0.3299437713235903,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "gdisney/starling-lm-uncensored:latest",
+        "rating": 0.738680991043215,
+        "size": 0.738680991043215,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gdisney/neural-chat-uncensored:latest",
+        "rating": 0.7387397513585026,
+        "size": 0.7387397513585026,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "all-minilm:latest",
+        "rating": -22.36202248532647,
+        "size": -22.36202248532647,
+        "category": [
+            "bert"
+        ]
+    },
+    {
+        "name": "codellama:70b",
+        "rating": 0.9723778066712903,
+        "size": 0.9723778066712903,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "codellama:7b",
+        "rating": 0.7193500013827558,
+        "size": 0.7193500013827558,
+        "category": "llama"
+    },
+    {
+        "name": "tinydolphin:latest",
+        "rating": -0.6863016922288472,
+        "size": -0.6863016922288472,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "duckdb-nsql:latest",
+        "rating": 0.7193491339562045,
+        "size": 0.7193491339562045,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nsfw:latest",
+        "rating": 0.9223742743647695,
+        "size": 0.9223742743647695,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nsfwstoryteller:latest",
+        "rating": 0.9223742743647695,
+        "size": 0.9223742743647695,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:70b",
+        "rating": 0.9723783781430271,
+        "size": 0.9723783781430271,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:13b",
+        "rating": 0.854246250974688,
+        "size": 0.854246250974688,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:7b",
+        "rating": 0.7194147600761807,
+        "size": 0.7194147600761807,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "orca-mini:latest",
+        "rating": 0.4576917555078759,
+        "size": 0.4576917555078759,
+        "category": "llama"
+    },
+    {
+        "name": "chris/openhermes-agent:latest",
+        "rating": 0.7907516112315884,
+        "size": 0.7907516112315884,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "openhermes-agent:latest",
+        "rating": 0.7907516112315884,
+        "size": 0.7907516112315884,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nexusraven:latest",
+        "rating": 0.8542495063920196,
+        "size": 0.8542495063920196,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nous-hermes2-mixtral:latest",
+        "rating": 0.9593933213379519,
+        "size": 0.9593933213379519,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama-pro:latest",
+        "rating": 0.7733173722946083,
+        "size": 0.7733173722946083,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "phi:latest",
+        "rating": 0.3299429885629498,
+        "size": 0.3299429885629498,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "zephyr:latest",
+        "rating": 0.7387397270114936,
+        "size": 0.7387397270114936,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "tinyllama:latest",
+        "rating": -0.6837722904805141,
+        "size": -0.6837722904805141,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "stablelm-zephyr:latest",
+        "rating": 0.33249062744117186,
+        "size": 0.33249062744117186,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "phind-codellama:latest",
+        "rating": 0.943641683469084,
+        "size": 0.943641683469084,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "neural-chat:latest",
+        "rating": 0.738739619261621,
+        "size": 0.738739619261621,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:latest",
+        "rating": 0.7194147600761807,
+        "size": 0.7194147600761807,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "everythinglm:latest",
+        "rating": 0.854246141899011,
+        "size": 0.854246141899011,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-mixtral:latest",
+        "rating": 0.959391883078472,
+        "size": 0.959391883078472,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-coder:latest",
+        "rating": -0.3835437857009121,
+        "size": -0.3835437857009121,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-coder:33b",
+        "rating": 0.9429451203154474,
+        "size": 0.9429451203154474,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "wizardcoder:latest",
+        "rating": 0.719342900504305,
+        "size": 0.719342900504305,
+        "category": "llama"
+    },
+    {
+        "name": "notus:latest",
+        "rating": 0.7387397298085392,
+        "size": 0.7387397298085392,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "openhermes:latest",
+        "rating": 0.7386808257524118,
+        "size": 0.7386808257524118,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "notux:latest",
+        "rating": 0.9593932877822178,
+        "size": 0.9593932877822178,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-phi:latest",
+        "rating": 0.3299473673158535,
+        "size": 0.3299473673158535,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "wizard-math:latest",
+        "rating": 0.7386807426935453,
+        "size": 0.7386807426935453,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "DrunkSally:latest",
+        "rating": 0.7193424577099126,
+        "size": 0.7193424577099126,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-llm:latest",
+        "rating": 0.7315963293994798,
+        "size": 0.7315963293994798,
+        "category": "llama"
+    },
+    {
+        "name": "yarn-mistral:latest",
+        "rating": 0.7386800690625638,
+        "size": 0.7386800690625638,
+        "category": "llama"
+    },
+    {
+        "name": "Sally:latest",
+        "rating": 0.7193424487601109,
+        "size": 0.7193424487601109,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "wizard-vicuna-uncensored:7b",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "wizardlm-uncensored:latest",
+        "rating": 0.8542267380764842,
+        "size": 0.8542267380764842,
+        "category": "llama"
+    },
+    {
+        "name": "orca2:latest",
+        "rating": 0.7193445415309809,
+        "size": 0.7193445415309809,
+        "category": "llama"
+    },
+    {
+        "name": "magicoder:latest",
+        "rating": 0.7193424914550612,
+        "size": 0.7193424914550612,
+        "category": "llama"
+    },
+    {
+        "name": "codellama:latest",
+        "rating": 0.7193500013827558,
+        "size": 0.7193500013827558,
+        "category": "llama"
+    },
+    {
+        "name": "orca2:13b",
+        "rating": 0.8542273902087836,
+        "size": 0.8542273902087836,
+        "category": "llama"
+    },
+    {
+        "name": "llama2-uncensored:latest",
+        "rating": 0.7193433102859423,
+        "size": 0.7193433102859423,
+        "category": "llama"
+    },
+    {
+        "name": "wizard-vicuna-uncensored:latest",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "Polly:latest",
+        "rating": 0.7386808125240507,
+        "size": 0.7386808125240507,
+        "category": "llama"
+    },
+    {
+        "name": "openhermes2.5-mistral:latest",
+        "rating": 0.7386808045107159,
+        "size": 0.7386808045107159,
+        "category": "llama"
+    },
+    {
+        "name": "codebooga:latest",
+        "rating": 0.943641662457532,
+        "size": 0.943641662457532,
+        "category": "llama"
+    },
+    {
+        "name": "medllama2:latest",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "sqlcoder:latest",
+        "rating": 0.7386800702709306,
+        "size": 0.7386800702709306,
+        "category": "llama"
+    },
+    {
+        "name": "mistral:7b",
+        "rating": 0.7389586129227413,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7389586129227413
+    },
+    {
+        "name": "mistral:instruct",
+        "rating": 0.7389586129227413,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7389586129227413
+    },
+    {
+        "name": "mistral:latest",
+        "rating": 0.7389586129227413,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7389586129227413
+    },
+    {
+        "name": "gemma:latest",
+        "rating": 0.7857595237139052,
+        "category": [
+            "gemma"
+        ],
+        "size": 0.7857595237139052
+    },
+    {
+        "name": "llama3:70b",
+        "rating": 0.9731361355288979,
+        "category": [
+            "llama"
+        ],
+        "size": 0.9731361355288979
+    },
+    {
+        "name": "llama3:latest",
+        "rating": 0.7696438389832294,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7696438389832294
+    },
+    {
+        "name": "mixtral:latest",
+        "rating": 0.9593933035304308,
+        "category": [
+            "llama"
+        ],
+        "size": 0.9593933035304308
+    },
+    {
+        "name": "llama3-chatqa:latest",
+        "rating": 0.7696438184740668,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7696438184740668
+    },
+    {
+        "name": "llava-phi3:latest",
+        "rating": 0.6331055792146523,
+        "category": [
+            "llama",
+            "clip"
+        ],
+        "size": 0.6331055792146523
+    },
+    {
+        "name": "llava-llama3:latest",
+        "rating": 0.806382373392201,
+        "category": [
+            "llama",
+            "clip"
+        ],
+        "size": 0.806382373392201
+    },
+    {
+        "name": "yi:latest",
+        "rating": 0.6913948503467904,
+        "category": [
+            "llama"
+        ],
+        "size": 0.6913948503467904
+    },
+    {
+        "name": "moondream:latest",
+        "rating": 0.38235722472225375,
+        "category": [
+            "phi2",
+            "clip"
+        ],
+        "size": 0.38235722472225375
+    },
+    {
+        "name": "codegemma:latest",
+        "rating": 0.7857595059312525,
+        "category": [
+            "gemma"
+        ],
+        "size": 0.7857595059312525
+    },
+    {
+        "name": "dolphin-llama3:70b",
+        "rating": 0.9731361507668531,
+        "category": [
+            "llama"
+        ],
+        "size": 0.9731361507668531
+    },
+    {
+        "name": "llama3-gradient:latest",
+        "rating": 0.7696438373029608,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7696438373029608
+    },
+    {
+        "name": "mxbai-embed-large:latest",
+        "rating": -0.6035199800850486,
+        "category": [
+            "bert"
+        ],
+        "size": -0.6035199800850486
+    },
+    {
+        "name": "phi3:3.8b-mini-instruct-4k-fp16",
+        "rating": 0.8595186211256102,
+        "category": [
+            "llama"
+        ],
+        "size": 0.8595186211256102
+    },
+    {
+        "name": "phi3:latest",
+        "rating": 0.5369648775315836,
+        "category": [
+            "llama"
+        ],
+        "size": 0.5369648775315836
+    },
+    {
+        "name": "dolphin-llama3:8b-v2.9-fp16",
+        "rating": 0.9331790379527204,
+        "category": [
+            "llama"
+        ],
+        "size": 0.9331790379527204
+    },
+    {
+        "name": "dolphin-llama3:latest",
+        "rating": 0.7696443983136375,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7696443983136375
+    },
+    {
+        "name": "command-r-plus:latest",
+        "rating": 0.9818689334112891,
+        "category": [
+            "command-r"
+        ],
+        "size": 0.9818689334112891
+    },
+    {
+        "name": "dbrx:latest",
+        "rating": 0.9855277086921039,
+        "category": [
+            "dbrx"
+        ],
+        "size": 0.9855277086921039
+    },
+    {
+        "name": "qwen:latest",
+        "rating": 0.5391850644391412,
+        "category": [
+            "qwen2"
+        ],
+        "size": 0.5391850644391412
+    },
+    {
+        "name": "stablelm2:latest",
+        "rating": -0.09254399947564806,
+        "category": [
+            "stablelm"
+        ],
+        "size": -0.09254399947564806
+    },
+    {
+        "name": "dolphincoder:latest",
+        "rating": 0.7460775729896193,
+        "category": [
+            "starcoder2"
+        ],
+        "size": 0.7460775729896193
+    },
+    {
+        "name": "starling-lm:latest",
+        "rating": 0.7386815706087386,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7386815706087386
+    },
+    {
+        "name": "dolphin-mistral:latest",
+        "rating": 0.738681572961847,
+        "category": [
+            "llama"
+        ],
+        "size": 0.738681572961847
+    },
+    {
+        "name": "command-r:latest",
+        "rating": 0.9469218316866266,
+        "category": [
+            "command-r"
+        ],
+        "size": 0.9469218316866266
+    },
+    {
+        "name": "stable-code:latest",
+        "rating": 0.33249079467333387,
+        "category": [
+            "stablelm"
+        ],
+        "size": 0.33249079467333387
+    },
+    {
+        "name": "mistral:text",
+        "rating": 0.7386808286143167,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7386808286143167
+    },
+    {
+        "name": "bakllava:latest",
+        "rating": 0.7731539975889645,
+        "category": [
+            "llama",
+            "clip"
+        ],
+        "size": 0.7731539975889645
+    },
+    {
+        "name": "starcoder2:latest",
+        "rating": 0.3720446506760715,
+        "category": [
+            "starcoder2"
+        ],
+        "size": 0.3720446506760715
+    },
+    {
+        "name": "llava:latest",
+        "rating": 0.7731545760425991,
+        "category": [
+            "llama",
+            "clip"
+        ],
+        "size": 0.7731545760425991
+    },
+    {
+        "name": "hermesmistral:latest",
+        "rating": 0.7907516160025972,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7907516160025972
+    },
+    {
+        "name": "nomic-embed-text:latest",
+        "rating": -2.9144448837405568,
+        "category": [
+            "nomic-bert"
+        ],
+        "size": -2.9144448837405568
+    },
+    {
+        "name": "hexbenjamin/memgpt-dpo-uncensored:q8_0",
+        "rating": 0.8604781166673485,
+        "category": [
+            "llama"
+        ],
+        "size": 0.8604781166673485
+    },
+    {
+        "name": "gdisney/phi-uncensored:latest",
+        "rating": 0.3299437713235903,
+        "category": [
+            "phi2"
+        ],
+        "size": 0.3299437713235903
+    },
+    {
+        "name": "gdisney/starling-lm-uncensored:latest",
+        "rating": 0.738680991043215,
+        "category": [
+            "llama"
+        ],
+        "size": 0.738680991043215
+    },
+    {
+        "name": "gdisney/neural-chat-uncensored:latest",
+        "rating": 0.7387397513585026,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7387397513585026
+    },
+    {
+        "name": "all-minilm:latest",
+        "rating": -22.36202248532647,
+        "category": [
+            "bert"
+        ],
+        "size": -22.36202248532647
+    },
+    {
+        "name": "codellama:70b",
+        "rating": 0.9723778066712903,
+        "category": [
+            "llama"
+        ],
+        "size": 0.9723778066712903
+    },
+    {
+        "name": "codellama:7b",
+        "rating": 0.7193500013827558,
+        "category": "llama",
+        "size": 0.7193500013827558
+    },
+    {
+        "name": "tinydolphin:latest",
+        "rating": -0.6863016922288472,
+        "category": [
+            "llama"
+        ],
+        "size": -0.6863016922288472
+    },
+    {
+        "name": "duckdb-nsql:latest",
+        "rating": 0.7193491339562045,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7193491339562045
+    },
+    {
+        "name": "nsfw:latest",
+        "rating": 0.9223742743647695,
+        "category": [
+            "llama"
+        ],
+        "size": 0.9223742743647695
+    },
+    {
+        "name": "nsfwstoryteller:latest",
+        "rating": 0.9223742743647695,
+        "category": [
+            "llama"
+        ],
+        "size": 0.9223742743647695
+    },
+    {
+        "name": "llama2:70b",
+        "rating": 0.9723783781430271,
+        "category": [
+            "llama"
+        ],
+        "size": 0.9723783781430271
+    },
+    {
+        "name": "llama2:13b",
+        "rating": 0.854246250974688,
+        "category": [
+            "llama"
+        ],
+        "size": 0.854246250974688
+    },
+    {
+        "name": "llama2:7b",
+        "rating": 0.7194147600761807,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7194147600761807
+    },
+    {
+        "name": "orca-mini:latest",
+        "rating": 0.4576917555078759,
+        "category": "llama",
+        "size": 0.4576917555078759
+    },
+    {
+        "name": "chris/openhermes-agent:latest",
+        "rating": 0.7907516112315884,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7907516112315884
+    },
+    {
+        "name": "openhermes-agent:latest",
+        "rating": 0.7907516112315884,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7907516112315884
+    },
+    {
+        "name": "nexusraven:latest",
+        "rating": 0.8542495063920196,
+        "category": [
+            "llama"
+        ],
+        "size": 0.8542495063920196
+    },
+    {
+        "name": "nous-hermes2-mixtral:latest",
+        "rating": 0.9593933213379519,
+        "category": [
+            "llama"
+        ],
+        "size": 0.9593933213379519
+    },
+    {
+        "name": "llama-pro:latest",
+        "rating": 0.7733173722946083,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7733173722946083
+    },
+    {
+        "name": "phi:latest",
+        "rating": 0.3299429885629498,
+        "category": [
+            "phi2"
+        ],
+        "size": 0.3299429885629498
+    },
+    {
+        "name": "zephyr:latest",
+        "rating": 0.7387397270114936,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7387397270114936
+    },
+    {
+        "name": "tinyllama:latest",
+        "rating": -0.6837722904805141,
+        "category": [
+            "llama"
+        ],
+        "size": -0.6837722904805141
+    },
+    {
+        "name": "stablelm-zephyr:latest",
+        "rating": 0.33249062744117186,
+        "category": [
+            "stablelm"
+        ],
+        "size": 0.33249062744117186
+    },
+    {
+        "name": "phind-codellama:latest",
+        "rating": 0.943641683469084,
+        "category": [
+            "llama"
+        ],
+        "size": 0.943641683469084
+    },
+    {
+        "name": "neural-chat:latest",
+        "rating": 0.738739619261621,
+        "category": [
+            "llama"
+        ],
+        "size": 0.738739619261621
+    },
+    {
+        "name": "llama2:latest",
+        "rating": 0.7194147600761807,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7194147600761807
+    },
+    {
+        "name": "everythinglm:latest",
+        "rating": 0.854246141899011,
+        "category": [
+            "llama"
+        ],
+        "size": 0.854246141899011
+    },
+    {
+        "name": "dolphin-mixtral:latest",
+        "rating": 0.959391883078472,
+        "category": [
+            "llama"
+        ],
+        "size": 0.959391883078472
+    },
+    {
+        "name": "deepseek-coder:latest",
+        "rating": -0.3835437857009121,
+        "category": [
+            "llama"
+        ],
+        "size": -0.3835437857009121
+    },
+    {
+        "name": "deepseek-coder:33b",
+        "rating": 0.9429451203154474,
+        "category": [
+            "llama"
+        ],
+        "size": 0.9429451203154474
+    },
+    {
+        "name": "wizardcoder:latest",
+        "rating": 0.719342900504305,
+        "category": "llama",
+        "size": 0.719342900504305
+    },
+    {
+        "name": "notus:latest",
+        "rating": 0.7387397298085392,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7387397298085392
+    },
+    {
+        "name": "openhermes:latest",
+        "rating": 0.7386808257524118,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7386808257524118
+    },
+    {
+        "name": "notux:latest",
+        "rating": 0.9593932877822178,
+        "category": [
+            "llama"
+        ],
+        "size": 0.9593932877822178
+    },
+    {
+        "name": "dolphin-phi:latest",
+        "rating": 0.3299473673158535,
+        "category": [
+            "phi2"
+        ],
+        "size": 0.3299473673158535
+    },
+    {
+        "name": "wizard-math:latest",
+        "rating": 0.7386807426935453,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7386807426935453
+    },
+    {
+        "name": "DrunkSally:latest",
+        "rating": 0.7193424577099126,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7193424577099126
+    },
+    {
+        "name": "deepseek-llm:latest",
+        "rating": 0.7315963293994798,
+        "category": "llama",
+        "size": 0.7315963293994798
+    },
+    {
+        "name": "yarn-mistral:latest",
+        "rating": 0.7386800690625638,
+        "category": "llama",
+        "size": 0.7386800690625638
+    },
+    {
+        "name": "Sally:latest",
+        "rating": 0.7193424487601109,
+        "category": [
+            "llama"
+        ],
+        "size": 0.7193424487601109
+    },
+    {
+        "name": "wizard-vicuna-uncensored:7b",
+        "rating": 0.7193424335014313,
+        "category": "llama",
+        "size": 0.7193424335014313
+    },
+    {
+        "name": "wizardlm-uncensored:latest",
+        "rating": 0.8542267380764842,
+        "category": "llama",
+        "size": 0.8542267380764842
+    },
+    {
+        "name": "orca2:latest",
+        "rating": 0.7193445415309809,
+        "category": "llama",
+        "size": 0.7193445415309809
+    },
+    {
+        "name": "magicoder:latest",
+        "rating": 0.7193424914550612,
+        "category": "llama",
+        "size": 0.7193424914550612
+    },
+    {
+        "name": "codellama:latest",
+        "rating": 0.7193500013827558,
+        "category": "llama",
+        "size": 0.7193500013827558
+    },
+    {
+        "name": "orca2:13b",
+        "rating": 0.8542273902087836,
+        "category": "llama",
+        "size": 0.8542273902087836
+    },
+    {
+        "name": "llama2-uncensored:latest",
+        "rating": 0.7193433102859423,
+        "category": "llama",
+        "size": 0.7193433102859423
+    },
+    {
+        "name": "wizard-vicuna-uncensored:latest",
+        "rating": 0.7193424335014313,
+        "category": "llama",
+        "size": 0.7193424335014313
+    },
+    {
+        "name": "Polly:latest",
+        "rating": 0.7386808125240507,
+        "category": "llama",
+        "size": 0.7386808125240507
+    },
+    {
+        "name": "openhermes2.5-mistral:latest",
+        "rating": 0.7386808045107159,
+        "category": "llama",
+        "size": 0.7386808045107159
+    },
+    {
+        "name": "codebooga:latest",
+        "rating": 0.943641662457532,
+        "category": "llama",
+        "size": 0.943641662457532
+    },
+    {
+        "name": "medllama2:latest",
+        "rating": 0.7193424335014313,
+        "category": "llama",
+        "size": 0.7193424335014313
+    },
+    {
+        "name": "sqlcoder:latest",
+        "rating": 0.7386800702709306,
+        "category": "llama",
+        "size": 0.7386800702709306
+    },
+    {
+        "name": "mistral:7b",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mistral:instruct",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mistral:latest",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gemma:latest",
+        "rating": 0.7857595237139052,
+        "size": 0.7857595237139052,
+        "category": [
+            "gemma"
+        ]
+    },
+    {
+        "name": "llama3:70b",
+        "rating": 0.9731361355288979,
+        "size": 0.9731361355288979,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3:latest",
+        "rating": 0.7696438389832294,
+        "size": 0.7696438389832294,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mixtral:latest",
+        "rating": 0.9593933035304308,
+        "size": 0.9593933035304308,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3-chatqa:latest",
+        "rating": 0.7696438184740668,
+        "size": 0.7696438184740668,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llava-phi3:latest",
+        "rating": 0.6331055792146523,
+        "size": 0.6331055792146523,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "llava-llama3:latest",
+        "rating": 0.806382373392201,
+        "size": 0.806382373392201,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "yi:latest",
+        "rating": 0.6913948503467904,
+        "size": 0.6913948503467904,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "moondream:latest",
+        "rating": 0.38235722472225375,
+        "size": 0.38235722472225375,
+        "category": [
+            "phi2",
+            "clip"
+        ]
+    },
+    {
+        "name": "codegemma:latest",
+        "rating": 0.7857595059312525,
+        "size": 0.7857595059312525,
+        "category": [
+            "gemma"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:70b",
+        "rating": 0.9731361507668531,
+        "size": 0.9731361507668531,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3-gradient:latest",
+        "rating": 0.7696438373029608,
+        "size": 0.7696438373029608,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mxbai-embed-large:latest",
+        "rating": -0.6035199800850486,
+        "size": -0.6035199800850486,
+        "category": [
+            "bert"
+        ]
+    },
+    {
+        "name": "phi3:3.8b-mini-instruct-4k-fp16",
+        "rating": 0.8595186211256102,
+        "size": 0.8595186211256102,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "phi3:latest",
+        "rating": 0.5369648775315836,
+        "size": 0.5369648775315836,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:8b-v2.9-fp16",
+        "rating": 0.9331790379527204,
+        "size": 0.9331790379527204,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:latest",
+        "rating": 0.7696443983136375,
+        "size": 0.7696443983136375,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "command-r-plus:latest",
+        "rating": 0.9818689334112891,
+        "size": 0.9818689334112891,
+        "category": [
+            "command-r"
+        ]
+    },
+    {
+        "name": "dbrx:latest",
+        "rating": 0.9855277086921039,
+        "size": 0.9855277086921039,
+        "category": [
+            "dbrx"
+        ]
+    },
+    {
+        "name": "qwen:latest",
+        "rating": 0.5391850644391412,
+        "size": 0.5391850644391412,
+        "category": [
+            "qwen2"
+        ]
+    },
+    {
+        "name": "stablelm2:latest",
+        "rating": -0.09254399947564806,
+        "size": -0.09254399947564806,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "dolphincoder:latest",
+        "rating": 0.7460775729896193,
+        "size": 0.7460775729896193,
+        "category": [
+            "starcoder2"
+        ]
+    },
+    {
+        "name": "starling-lm:latest",
+        "rating": 0.7386815706087386,
+        "size": 0.7386815706087386,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-mistral:latest",
+        "rating": 0.738681572961847,
+        "size": 0.738681572961847,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "command-r:latest",
+        "rating": 0.9469218316866266,
+        "size": 0.9469218316866266,
+        "category": [
+            "command-r"
+        ]
+    },
+    {
+        "name": "stable-code:latest",
+        "rating": 0.33249079467333387,
+        "size": 0.33249079467333387,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "mistral:text",
+        "rating": 0.7386808286143167,
+        "size": 0.7386808286143167,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "bakllava:latest",
+        "rating": 0.7731539975889645,
+        "size": 0.7731539975889645,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "starcoder2:latest",
+        "rating": 0.3720446506760715,
+        "size": 0.3720446506760715,
+        "category": [
+            "starcoder2"
+        ]
+    },
+    {
+        "name": "llava:latest",
+        "rating": 0.7731545760425991,
+        "size": 0.7731545760425991,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "hermesmistral:latest",
+        "rating": 0.7907516160025972,
+        "size": 0.7907516160025972,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nomic-embed-text:latest",
+        "rating": -2.9144448837405568,
+        "size": -2.9144448837405568,
+        "category": [
+            "nomic-bert"
+        ]
+    },
+    {
+        "name": "hexbenjamin/memgpt-dpo-uncensored:q8_0",
+        "rating": 0.8604781166673485,
+        "size": 0.8604781166673485,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gdisney/phi-uncensored:latest",
+        "rating": 0.3299437713235903,
+        "size": 0.3299437713235903,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "gdisney/starling-lm-uncensored:latest",
+        "rating": 0.738680991043215,
+        "size": 0.738680991043215,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gdisney/neural-chat-uncensored:latest",
+        "rating": 0.7387397513585026,
+        "size": 0.7387397513585026,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "all-minilm:latest",
+        "rating": -22.36202248532647,
+        "size": -22.36202248532647,
+        "category": [
+            "bert"
+        ]
+    },
+    {
+        "name": "codellama:70b",
+        "rating": 0.9723778066712903,
+        "size": 0.9723778066712903,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "codellama:7b",
+        "rating": 0.7193500013827558,
+        "size": 0.7193500013827558,
+        "category": "llama"
+    },
+    {
+        "name": "tinydolphin:latest",
+        "rating": -0.6863016922288472,
+        "size": -0.6863016922288472,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "duckdb-nsql:latest",
+        "rating": 0.7193491339562045,
+        "size": 0.7193491339562045,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nsfw:latest",
+        "rating": 0.9223742743647695,
+        "size": 0.9223742743647695,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nsfwstoryteller:latest",
+        "rating": 0.9223742743647695,
+        "size": 0.9223742743647695,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:70b",
+        "rating": 0.9723783781430271,
+        "size": 0.9723783781430271,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:13b",
+        "rating": 0.854246250974688,
+        "size": 0.854246250974688,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:7b",
+        "rating": 0.7194147600761807,
+        "size": 0.7194147600761807,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "orca-mini:latest",
+        "rating": 0.4576917555078759,
+        "size": 0.4576917555078759,
+        "category": "llama"
+    },
+    {
+        "name": "chris/openhermes-agent:latest",
+        "rating": 0.7907516112315884,
+        "size": 0.7907516112315884,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "openhermes-agent:latest",
+        "rating": 0.7907516112315884,
+        "size": 0.7907516112315884,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nexusraven:latest",
+        "rating": 0.8542495063920196,
+        "size": 0.8542495063920196,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nous-hermes2-mixtral:latest",
+        "rating": 0.9593933213379519,
+        "size": 0.9593933213379519,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama-pro:latest",
+        "rating": 0.7733173722946083,
+        "size": 0.7733173722946083,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "phi:latest",
+        "rating": 0.3299429885629498,
+        "size": 0.3299429885629498,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "zephyr:latest",
+        "rating": 0.7387397270114936,
+        "size": 0.7387397270114936,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "tinyllama:latest",
+        "rating": -0.6837722904805141,
+        "size": -0.6837722904805141,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "stablelm-zephyr:latest",
+        "rating": 0.33249062744117186,
+        "size": 0.33249062744117186,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "phind-codellama:latest",
+        "rating": 0.943641683469084,
+        "size": 0.943641683469084,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "neural-chat:latest",
+        "rating": 0.738739619261621,
+        "size": 0.738739619261621,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:latest",
+        "rating": 0.7194147600761807,
+        "size": 0.7194147600761807,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "everythinglm:latest",
+        "rating": 0.854246141899011,
+        "size": 0.854246141899011,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-mixtral:latest",
+        "rating": 0.959391883078472,
+        "size": 0.959391883078472,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-coder:latest",
+        "rating": -0.3835437857009121,
+        "size": -0.3835437857009121,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-coder:33b",
+        "rating": 0.9429451203154474,
+        "size": 0.9429451203154474,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "wizardcoder:latest",
+        "rating": 0.719342900504305,
+        "size": 0.719342900504305,
+        "category": "llama"
+    },
+    {
+        "name": "notus:latest",
+        "rating": 0.7387397298085392,
+        "size": 0.7387397298085392,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "openhermes:latest",
+        "rating": 0.7386808257524118,
+        "size": 0.7386808257524118,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "notux:latest",
+        "rating": 0.9593932877822178,
+        "size": 0.9593932877822178,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-phi:latest",
+        "rating": 0.3299473673158535,
+        "size": 0.3299473673158535,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "wizard-math:latest",
+        "rating": 0.7386807426935453,
+        "size": 0.7386807426935453,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "DrunkSally:latest",
+        "rating": 0.7193424577099126,
+        "size": 0.7193424577099126,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-llm:latest",
+        "rating": 0.7315963293994798,
+        "size": 0.7315963293994798,
+        "category": "llama"
+    },
+    {
+        "name": "yarn-mistral:latest",
+        "rating": 0.7386800690625638,
+        "size": 0.7386800690625638,
+        "category": "llama"
+    },
+    {
+        "name": "Sally:latest",
+        "rating": 0.7193424487601109,
+        "size": 0.7193424487601109,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "wizard-vicuna-uncensored:7b",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "wizardlm-uncensored:latest",
+        "rating": 0.8542267380764842,
+        "size": 0.8542267380764842,
+        "category": "llama"
+    },
+    {
+        "name": "orca2:latest",
+        "rating": 0.7193445415309809,
+        "size": 0.7193445415309809,
+        "category": "llama"
+    },
+    {
+        "name": "magicoder:latest",
+        "rating": 0.7193424914550612,
+        "size": 0.7193424914550612,
+        "category": "llama"
+    },
+    {
+        "name": "codellama:latest",
+        "rating": 0.7193500013827558,
+        "size": 0.7193500013827558,
+        "category": "llama"
+    },
+    {
+        "name": "orca2:13b",
+        "rating": 0.8542273902087836,
+        "size": 0.8542273902087836,
+        "category": "llama"
+    },
+    {
+        "name": "llama2-uncensored:latest",
+        "rating": 0.7193433102859423,
+        "size": 0.7193433102859423,
+        "category": "llama"
+    },
+    {
+        "name": "wizard-vicuna-uncensored:latest",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "Polly:latest",
+        "rating": 0.7386808125240507,
+        "size": 0.7386808125240507,
+        "category": "llama"
+    },
+    {
+        "name": "openhermes2.5-mistral:latest",
+        "rating": 0.7386808045107159,
+        "size": 0.7386808045107159,
+        "category": "llama"
+    },
+    {
+        "name": "codebooga:latest",
+        "rating": 0.943641662457532,
+        "size": 0.943641662457532,
+        "category": "llama"
+    },
+    {
+        "name": "medllama2:latest",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "sqlcoder:latest",
+        "rating": 0.7386800702709306,
+        "size": 0.7386800702709306,
+        "category": "llama"
+    },
+    {
+        "name": "mistral:7b",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mistral:instruct",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mistral:latest",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gemma:latest",
+        "rating": 0.7857595237139052,
+        "size": 0.7857595237139052,
+        "category": [
+            "gemma"
+        ]
+    },
+    {
+        "name": "llama3:70b",
+        "rating": 0.9731361355288979,
+        "size": 0.9731361355288979,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3:latest",
+        "rating": 0.7696438389832294,
+        "size": 0.7696438389832294,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mixtral:latest",
+        "rating": 0.9593933035304308,
+        "size": 0.9593933035304308,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3-chatqa:latest",
+        "rating": 0.7696438184740668,
+        "size": 0.7696438184740668,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llava-phi3:latest",
+        "rating": 0.6331055792146523,
+        "size": 0.6331055792146523,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "llava-llama3:latest",
+        "rating": 0.806382373392201,
+        "size": 0.806382373392201,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "yi:latest",
+        "rating": 0.6913948503467904,
+        "size": 0.6913948503467904,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "moondream:latest",
+        "rating": 0.38235722472225375,
+        "size": 0.38235722472225375,
+        "category": [
+            "phi2",
+            "clip"
+        ]
+    },
+    {
+        "name": "codegemma:latest",
+        "rating": 0.7857595059312525,
+        "size": 0.7857595059312525,
+        "category": [
+            "gemma"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:70b",
+        "rating": 0.9731361507668531,
+        "size": 0.9731361507668531,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3-gradient:latest",
+        "rating": 0.7696438373029608,
+        "size": 0.7696438373029608,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mxbai-embed-large:latest",
+        "rating": -0.6035199800850486,
+        "size": -0.6035199800850486,
+        "category": [
+            "bert"
+        ]
+    },
+    {
+        "name": "phi3:3.8b-mini-instruct-4k-fp16",
+        "rating": 0.8595186211256102,
+        "size": 0.8595186211256102,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "phi3:latest",
+        "rating": 0.5369648775315836,
+        "size": 0.5369648775315836,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:8b-v2.9-fp16",
+        "rating": 0.9331790379527204,
+        "size": 0.9331790379527204,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:latest",
+        "rating": 0.7696443983136375,
+        "size": 0.7696443983136375,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "command-r-plus:latest",
+        "rating": 0.9818689334112891,
+        "size": 0.9818689334112891,
+        "category": [
+            "command-r"
+        ]
+    },
+    {
+        "name": "dbrx:latest",
+        "rating": 0.9855277086921039,
+        "size": 0.9855277086921039,
+        "category": [
+            "dbrx"
+        ]
+    },
+    {
+        "name": "qwen:latest",
+        "rating": 0.5391850644391412,
+        "size": 0.5391850644391412,
+        "category": [
+            "qwen2"
+        ]
+    },
+    {
+        "name": "stablelm2:latest",
+        "rating": -0.09254399947564806,
+        "size": -0.09254399947564806,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "dolphincoder:latest",
+        "rating": 0.7460775729896193,
+        "size": 0.7460775729896193,
+        "category": [
+            "starcoder2"
+        ]
+    },
+    {
+        "name": "starling-lm:latest",
+        "rating": 0.7386815706087386,
+        "size": 0.7386815706087386,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-mistral:latest",
+        "rating": 0.738681572961847,
+        "size": 0.738681572961847,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "command-r:latest",
+        "rating": 0.9469218316866266,
+        "size": 0.9469218316866266,
+        "category": [
+            "command-r"
+        ]
+    },
+    {
+        "name": "stable-code:latest",
+        "rating": 0.33249079467333387,
+        "size": 0.33249079467333387,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "mistral:text",
+        "rating": 0.7386808286143167,
+        "size": 0.7386808286143167,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "bakllava:latest",
+        "rating": 0.7731539975889645,
+        "size": 0.7731539975889645,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "starcoder2:latest",
+        "rating": 0.3720446506760715,
+        "size": 0.3720446506760715,
+        "category": [
+            "starcoder2"
+        ]
+    },
+    {
+        "name": "llava:latest",
+        "rating": 0.7731545760425991,
+        "size": 0.7731545760425991,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "hermesmistral:latest",
+        "rating": 0.7907516160025972,
+        "size": 0.7907516160025972,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nomic-embed-text:latest",
+        "rating": -2.9144448837405568,
+        "size": -2.9144448837405568,
+        "category": [
+            "nomic-bert"
+        ]
+    },
+    {
+        "name": "hexbenjamin/memgpt-dpo-uncensored:q8_0",
+        "rating": 0.8604781166673485,
+        "size": 0.8604781166673485,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gdisney/phi-uncensored:latest",
+        "rating": 0.3299437713235903,
+        "size": 0.3299437713235903,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "gdisney/starling-lm-uncensored:latest",
+        "rating": 0.738680991043215,
+        "size": 0.738680991043215,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gdisney/neural-chat-uncensored:latest",
+        "rating": 0.7387397513585026,
+        "size": 0.7387397513585026,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "all-minilm:latest",
+        "rating": -22.36202248532647,
+        "size": -22.36202248532647,
+        "category": [
+            "bert"
+        ]
+    },
+    {
+        "name": "codellama:70b",
+        "rating": 0.9723778066712903,
+        "size": 0.9723778066712903,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "codellama:7b",
+        "rating": 0.7193500013827558,
+        "size": 0.7193500013827558,
+        "category": "llama"
+    },
+    {
+        "name": "tinydolphin:latest",
+        "rating": -0.6863016922288472,
+        "size": -0.6863016922288472,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "duckdb-nsql:latest",
+        "rating": 0.7193491339562045,
+        "size": 0.7193491339562045,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nsfw:latest",
+        "rating": 0.9223742743647695,
+        "size": 0.9223742743647695,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nsfwstoryteller:latest",
+        "rating": 0.9223742743647695,
+        "size": 0.9223742743647695,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:70b",
+        "rating": 0.9723783781430271,
+        "size": 0.9723783781430271,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:13b",
+        "rating": 0.854246250974688,
+        "size": 0.854246250974688,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:7b",
+        "rating": 0.7194147600761807,
+        "size": 0.7194147600761807,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "orca-mini:latest",
+        "rating": 0.4576917555078759,
+        "size": 0.4576917555078759,
+        "category": "llama"
+    },
+    {
+        "name": "chris/openhermes-agent:latest",
+        "rating": 0.7907516112315884,
+        "size": 0.7907516112315884,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "openhermes-agent:latest",
+        "rating": 0.7907516112315884,
+        "size": 0.7907516112315884,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nexusraven:latest",
+        "rating": 0.8542495063920196,
+        "size": 0.8542495063920196,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nous-hermes2-mixtral:latest",
+        "rating": 0.9593933213379519,
+        "size": 0.9593933213379519,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama-pro:latest",
+        "rating": 0.7733173722946083,
+        "size": 0.7733173722946083,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "phi:latest",
+        "rating": 0.3299429885629498,
+        "size": 0.3299429885629498,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "zephyr:latest",
+        "rating": 0.7387397270114936,
+        "size": 0.7387397270114936,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "tinyllama:latest",
+        "rating": -0.6837722904805141,
+        "size": -0.6837722904805141,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "stablelm-zephyr:latest",
+        "rating": 0.33249062744117186,
+        "size": 0.33249062744117186,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "phind-codellama:latest",
+        "rating": 0.943641683469084,
+        "size": 0.943641683469084,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "neural-chat:latest",
+        "rating": 0.738739619261621,
+        "size": 0.738739619261621,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:latest",
+        "rating": 0.7194147600761807,
+        "size": 0.7194147600761807,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "everythinglm:latest",
+        "rating": 0.854246141899011,
+        "size": 0.854246141899011,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-mixtral:latest",
+        "rating": 0.959391883078472,
+        "size": 0.959391883078472,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-coder:latest",
+        "rating": -0.3835437857009121,
+        "size": -0.3835437857009121,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-coder:33b",
+        "rating": 0.9429451203154474,
+        "size": 0.9429451203154474,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "wizardcoder:latest",
+        "rating": 0.719342900504305,
+        "size": 0.719342900504305,
+        "category": "llama"
+    },
+    {
+        "name": "notus:latest",
+        "rating": 0.7387397298085392,
+        "size": 0.7387397298085392,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "openhermes:latest",
+        "rating": 0.7386808257524118,
+        "size": 0.7386808257524118,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "notux:latest",
+        "rating": 0.9593932877822178,
+        "size": 0.9593932877822178,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-phi:latest",
+        "rating": 0.3299473673158535,
+        "size": 0.3299473673158535,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "wizard-math:latest",
+        "rating": 0.7386807426935453,
+        "size": 0.7386807426935453,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "DrunkSally:latest",
+        "rating": 0.7193424577099126,
+        "size": 0.7193424577099126,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-llm:latest",
+        "rating": 0.7315963293994798,
+        "size": 0.7315963293994798,
+        "category": "llama"
+    },
+    {
+        "name": "yarn-mistral:latest",
+        "rating": 0.7386800690625638,
+        "size": 0.7386800690625638,
+        "category": "llama"
+    },
+    {
+        "name": "Sally:latest",
+        "rating": 0.7193424487601109,
+        "size": 0.7193424487601109,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "wizard-vicuna-uncensored:7b",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "wizardlm-uncensored:latest",
+        "rating": 0.8542267380764842,
+        "size": 0.8542267380764842,
+        "category": "llama"
+    },
+    {
+        "name": "orca2:latest",
+        "rating": 0.7193445415309809,
+        "size": 0.7193445415309809,
+        "category": "llama"
+    },
+    {
+        "name": "magicoder:latest",
+        "rating": 0.7193424914550612,
+        "size": 0.7193424914550612,
+        "category": "llama"
+    },
+    {
+        "name": "codellama:latest",
+        "rating": 0.7193500013827558,
+        "size": 0.7193500013827558,
+        "category": "llama"
+    },
+    {
+        "name": "orca2:13b",
+        "rating": 0.8542273902087836,
+        "size": 0.8542273902087836,
+        "category": "llama"
+    },
+    {
+        "name": "llama2-uncensored:latest",
+        "rating": 0.7193433102859423,
+        "size": 0.7193433102859423,
+        "category": "llama"
+    },
+    {
+        "name": "wizard-vicuna-uncensored:latest",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "Polly:latest",
+        "rating": 0.7386808125240507,
+        "size": 0.7386808125240507,
+        "category": "llama"
+    },
+    {
+        "name": "openhermes2.5-mistral:latest",
+        "rating": 0.7386808045107159,
+        "size": 0.7386808045107159,
+        "category": "llama"
+    },
+    {
+        "name": "codebooga:latest",
+        "rating": 0.943641662457532,
+        "size": 0.943641662457532,
+        "category": "llama"
+    },
+    {
+        "name": "medllama2:latest",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "sqlcoder:latest",
+        "rating": 0.7386800702709306,
+        "size": 0.7386800702709306,
+        "category": "llama"
+    },
+    {
+        "name": "mistral:7b",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mistral:instruct",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mistral:latest",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gemma:latest",
+        "rating": 0.7857595237139052,
+        "size": 0.7857595237139052,
+        "category": [
+            "gemma"
+        ]
+    },
+    {
+        "name": "llama3:70b",
+        "rating": 0.9731361355288979,
+        "size": 0.9731361355288979,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3:latest",
+        "rating": 0.7696438389832294,
+        "size": 0.7696438389832294,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mixtral:latest",
+        "rating": 0.9593933035304308,
+        "size": 0.9593933035304308,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3-chatqa:latest",
+        "rating": 0.7696438184740668,
+        "size": 0.7696438184740668,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llava-phi3:latest",
+        "rating": 0.6331055792146523,
+        "size": 0.6331055792146523,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "llava-llama3:latest",
+        "rating": 0.806382373392201,
+        "size": 0.806382373392201,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "yi:latest",
+        "rating": 0.6913948503467904,
+        "size": 0.6913948503467904,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "moondream:latest",
+        "rating": 0.38235722472225375,
+        "size": 0.38235722472225375,
+        "category": [
+            "phi2",
+            "clip"
+        ]
+    },
+    {
+        "name": "codegemma:latest",
+        "rating": 0.7857595059312525,
+        "size": 0.7857595059312525,
+        "category": [
+            "gemma"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:70b",
+        "rating": 0.9731361507668531,
+        "size": 0.9731361507668531,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3-gradient:latest",
+        "rating": 0.7696438373029608,
+        "size": 0.7696438373029608,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mxbai-embed-large:latest",
+        "rating": -0.6035199800850486,
+        "size": -0.6035199800850486,
+        "category": [
+            "bert"
+        ]
+    },
+    {
+        "name": "phi3:3.8b-mini-instruct-4k-fp16",
+        "rating": 0.8595186211256102,
+        "size": 0.8595186211256102,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "phi3:latest",
+        "rating": 0.5369648775315836,
+        "size": 0.5369648775315836,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:8b-v2.9-fp16",
+        "rating": 0.9331790379527204,
+        "size": 0.9331790379527204,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:latest",
+        "rating": 0.7696443983136375,
+        "size": 0.7696443983136375,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "command-r-plus:latest",
+        "rating": 0.9818689334112891,
+        "size": 0.9818689334112891,
+        "category": [
+            "command-r"
+        ]
+    },
+    {
+        "name": "dbrx:latest",
+        "rating": 0.9855277086921039,
+        "size": 0.9855277086921039,
+        "category": [
+            "dbrx"
+        ]
+    },
+    {
+        "name": "qwen:latest",
+        "rating": 0.5391850644391412,
+        "size": 0.5391850644391412,
+        "category": [
+            "qwen2"
+        ]
+    },
+    {
+        "name": "stablelm2:latest",
+        "rating": -0.09254399947564806,
+        "size": -0.09254399947564806,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "dolphincoder:latest",
+        "rating": 0.7460775729896193,
+        "size": 0.7460775729896193,
+        "category": [
+            "starcoder2"
+        ]
+    },
+    {
+        "name": "starling-lm:latest",
+        "rating": 0.7386815706087386,
+        "size": 0.7386815706087386,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-mistral:latest",
+        "rating": 0.738681572961847,
+        "size": 0.738681572961847,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "command-r:latest",
+        "rating": 0.9469218316866266,
+        "size": 0.9469218316866266,
+        "category": [
+            "command-r"
+        ]
+    },
+    {
+        "name": "stable-code:latest",
+        "rating": 0.33249079467333387,
+        "size": 0.33249079467333387,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "mistral:text",
+        "rating": 0.7386808286143167,
+        "size": 0.7386808286143167,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "bakllava:latest",
+        "rating": 0.7731539975889645,
+        "size": 0.7731539975889645,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "starcoder2:latest",
+        "rating": 0.3720446506760715,
+        "size": 0.3720446506760715,
+        "category": [
+            "starcoder2"
+        ]
+    },
+    {
+        "name": "llava:latest",
+        "rating": 0.7731545760425991,
+        "size": 0.7731545760425991,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "hermesmistral:latest",
+        "rating": 0.7907516160025972,
+        "size": 0.7907516160025972,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nomic-embed-text:latest",
+        "rating": -2.9144448837405568,
+        "size": -2.9144448837405568,
+        "category": [
+            "nomic-bert"
+        ]
+    },
+    {
+        "name": "hexbenjamin/memgpt-dpo-uncensored:q8_0",
+        "rating": 0.8604781166673485,
+        "size": 0.8604781166673485,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gdisney/phi-uncensored:latest",
+        "rating": 0.3299437713235903,
+        "size": 0.3299437713235903,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "gdisney/starling-lm-uncensored:latest",
+        "rating": 0.738680991043215,
+        "size": 0.738680991043215,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gdisney/neural-chat-uncensored:latest",
+        "rating": 0.7387397513585026,
+        "size": 0.7387397513585026,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "all-minilm:latest",
+        "rating": -22.36202248532647,
+        "size": -22.36202248532647,
+        "category": [
+            "bert"
+        ]
+    },
+    {
+        "name": "codellama:70b",
+        "rating": 0.9723778066712903,
+        "size": 0.9723778066712903,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "codellama:7b",
+        "rating": 0.7193500013827558,
+        "size": 0.7193500013827558,
+        "category": "llama"
+    },
+    {
+        "name": "tinydolphin:latest",
+        "rating": -0.6863016922288472,
+        "size": -0.6863016922288472,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "duckdb-nsql:latest",
+        "rating": 0.7193491339562045,
+        "size": 0.7193491339562045,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nsfw:latest",
+        "rating": 0.9223742743647695,
+        "size": 0.9223742743647695,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nsfwstoryteller:latest",
+        "rating": 0.9223742743647695,
+        "size": 0.9223742743647695,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:70b",
+        "rating": 0.9723783781430271,
+        "size": 0.9723783781430271,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:13b",
+        "rating": 0.854246250974688,
+        "size": 0.854246250974688,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:7b",
+        "rating": 0.7194147600761807,
+        "size": 0.7194147600761807,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "orca-mini:latest",
+        "rating": 0.4576917555078759,
+        "size": 0.4576917555078759,
+        "category": "llama"
+    },
+    {
+        "name": "chris/openhermes-agent:latest",
+        "rating": 0.7907516112315884,
+        "size": 0.7907516112315884,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "openhermes-agent:latest",
+        "rating": 0.7907516112315884,
+        "size": 0.7907516112315884,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nexusraven:latest",
+        "rating": 0.8542495063920196,
+        "size": 0.8542495063920196,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nous-hermes2-mixtral:latest",
+        "rating": 0.9593933213379519,
+        "size": 0.9593933213379519,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama-pro:latest",
+        "rating": 0.7733173722946083,
+        "size": 0.7733173722946083,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "phi:latest",
+        "rating": 0.3299429885629498,
+        "size": 0.3299429885629498,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "zephyr:latest",
+        "rating": 0.7387397270114936,
+        "size": 0.7387397270114936,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "tinyllama:latest",
+        "rating": -0.6837722904805141,
+        "size": -0.6837722904805141,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "stablelm-zephyr:latest",
+        "rating": 0.33249062744117186,
+        "size": 0.33249062744117186,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "phind-codellama:latest",
+        "rating": 0.943641683469084,
+        "size": 0.943641683469084,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "neural-chat:latest",
+        "rating": 0.738739619261621,
+        "size": 0.738739619261621,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:latest",
+        "rating": 0.7194147600761807,
+        "size": 0.7194147600761807,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "everythinglm:latest",
+        "rating": 0.854246141899011,
+        "size": 0.854246141899011,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-mixtral:latest",
+        "rating": 0.959391883078472,
+        "size": 0.959391883078472,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-coder:latest",
+        "rating": -0.3835437857009121,
+        "size": -0.3835437857009121,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-coder:33b",
+        "rating": 0.9429451203154474,
+        "size": 0.9429451203154474,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "wizardcoder:latest",
+        "rating": 0.719342900504305,
+        "size": 0.719342900504305,
+        "category": "llama"
+    },
+    {
+        "name": "notus:latest",
+        "rating": 0.7387397298085392,
+        "size": 0.7387397298085392,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "openhermes:latest",
+        "rating": 0.7386808257524118,
+        "size": 0.7386808257524118,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "notux:latest",
+        "rating": 0.9593932877822178,
+        "size": 0.9593932877822178,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-phi:latest",
+        "rating": 0.3299473673158535,
+        "size": 0.3299473673158535,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "wizard-math:latest",
+        "rating": 0.7386807426935453,
+        "size": 0.7386807426935453,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "DrunkSally:latest",
+        "rating": 0.7193424577099126,
+        "size": 0.7193424577099126,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-llm:latest",
+        "rating": 0.7315963293994798,
+        "size": 0.7315963293994798,
+        "category": "llama"
+    },
+    {
+        "name": "yarn-mistral:latest",
+        "rating": 0.7386800690625638,
+        "size": 0.7386800690625638,
+        "category": "llama"
+    },
+    {
+        "name": "Sally:latest",
+        "rating": 0.7193424487601109,
+        "size": 0.7193424487601109,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "wizard-vicuna-uncensored:7b",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "wizardlm-uncensored:latest",
+        "rating": 0.8542267380764842,
+        "size": 0.8542267380764842,
+        "category": "llama"
+    },
+    {
+        "name": "orca2:latest",
+        "rating": 0.7193445415309809,
+        "size": 0.7193445415309809,
+        "category": "llama"
+    },
+    {
+        "name": "magicoder:latest",
+        "rating": 0.7193424914550612,
+        "size": 0.7193424914550612,
+        "category": "llama"
+    },
+    {
+        "name": "codellama:latest",
+        "rating": 0.7193500013827558,
+        "size": 0.7193500013827558,
+        "category": "llama"
+    },
+    {
+        "name": "orca2:13b",
+        "rating": 0.8542273902087836,
+        "size": 0.8542273902087836,
+        "category": "llama"
+    },
+    {
+        "name": "llama2-uncensored:latest",
+        "rating": 0.7193433102859423,
+        "size": 0.7193433102859423,
+        "category": "llama"
+    },
+    {
+        "name": "wizard-vicuna-uncensored:latest",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "Polly:latest",
+        "rating": 0.7386808125240507,
+        "size": 0.7386808125240507,
+        "category": "llama"
+    },
+    {
+        "name": "openhermes2.5-mistral:latest",
+        "rating": 0.7386808045107159,
+        "size": 0.7386808045107159,
+        "category": "llama"
+    },
+    {
+        "name": "codebooga:latest",
+        "rating": 0.943641662457532,
+        "size": 0.943641662457532,
+        "category": "llama"
+    },
+    {
+        "name": "medllama2:latest",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "sqlcoder:latest",
+        "rating": 0.7386800702709306,
+        "size": 0.7386800702709306,
+        "category": "llama"
+    },
+    {
+        "name": "granite-code:34b",
+        "rating": 0.9441871473246857,
+        "size": 0.9441871473246857,
+        "category": [
+            "starcoder"
+        ]
+    },
+    {
+        "name": "codestral:latest",
+        "rating": 0.9145733713127033,
+        "size": 0.9145733713127033,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "phi3:medium",
+        "rating": 0.8640338536789005,
+        "size": 0.8640338536789005,
+        "category": [
+            "phi3"
+        ]
+    },
+    {
+        "name": "solar:10.7b-instruct-v1-q6_K",
+        "rating": 0.8780560917710268,
+        "size": 0.8780560917710268,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "phi3:latest",
+        "rating": 0.5369648775315836,
+        "size": 0.5369648775315836,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "codeqwen:latest",
+        "rating": 0.7430898505120177,
+        "size": 0.7430898505120177,
+        "category": [
+            "qwen2"
+        ]
+    },
+    {
+        "name": "mistral:7b",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mistral:instruct",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mistral:latest",
+        "rating": 0.7389586129227413,
+        "size": 0.7389586129227413,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gemma:latest",
+        "rating": 0.7857595237139052,
+        "size": 0.7857595237139052,
+        "category": [
+            "gemma"
+        ]
+    },
+    {
+        "name": "llama3:70b",
+        "rating": 0.9731361355288979,
+        "size": 0.9731361355288979,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3:latest",
+        "rating": 0.7696438389832294,
+        "size": 0.7696438389832294,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mixtral:latest",
+        "rating": 0.9593933035304308,
+        "size": 0.9593933035304308,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3-chatqa:latest",
+        "rating": 0.7696438184740668,
+        "size": 0.7696438184740668,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llava-phi3:latest",
+        "rating": 0.6331055792146523,
+        "size": 0.6331055792146523,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "llava-llama3:latest",
+        "rating": 0.806382373392201,
+        "size": 0.806382373392201,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "yi:latest",
+        "rating": 0.6913948503467904,
+        "size": 0.6913948503467904,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "moondream:latest",
+        "rating": 0.38235722472225375,
+        "size": 0.38235722472225375,
+        "category": [
+            "phi2",
+            "clip"
+        ]
+    },
+    {
+        "name": "codegemma:latest",
+        "rating": 0.7857595059312525,
+        "size": 0.7857595059312525,
+        "category": [
+            "gemma"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:70b",
+        "rating": 0.9731361507668531,
+        "size": 0.9731361507668531,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama3-gradient:latest",
+        "rating": 0.7696438373029608,
+        "size": 0.7696438373029608,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "mxbai-embed-large:latest",
+        "rating": -0.6035199800850486,
+        "size": -0.6035199800850486,
+        "category": [
+            "bert"
+        ]
+    },
+    {
+        "name": "phi3:3.8b-mini-instruct-4k-fp16",
+        "rating": 0.8595186211256102,
+        "size": 0.8595186211256102,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:8b-v2.9-fp16",
+        "rating": 0.9331790379527204,
+        "size": 0.9331790379527204,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-llama3:latest",
+        "rating": 0.7696443983136375,
+        "size": 0.7696443983136375,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "command-r-plus:latest",
+        "rating": 0.9818689334112891,
+        "size": 0.9818689334112891,
+        "category": [
+            "command-r"
+        ]
+    },
+    {
+        "name": "dbrx:latest",
+        "rating": 0.9855277086921039,
+        "size": 0.9855277086921039,
+        "category": [
+            "dbrx"
+        ]
+    },
+    {
+        "name": "qwen:latest",
+        "rating": 0.5391850644391412,
+        "size": 0.5391850644391412,
+        "category": [
+            "qwen2"
+        ]
+    },
+    {
+        "name": "stablelm2:latest",
+        "rating": -0.09254399947564806,
+        "size": -0.09254399947564806,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "dolphincoder:latest",
+        "rating": 0.7460775729896193,
+        "size": 0.7460775729896193,
+        "category": [
+            "starcoder2"
+        ]
+    },
+    {
+        "name": "starling-lm:latest",
+        "rating": 0.7386815706087386,
+        "size": 0.7386815706087386,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-mistral:latest",
+        "rating": 0.738681572961847,
+        "size": 0.738681572961847,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "command-r:latest",
+        "rating": 0.9469218316866266,
+        "size": 0.9469218316866266,
+        "category": [
+            "command-r"
+        ]
+    },
+    {
+        "name": "stable-code:latest",
+        "rating": 0.33249079467333387,
+        "size": 0.33249079467333387,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "mistral:text",
+        "rating": 0.7386808286143167,
+        "size": 0.7386808286143167,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "bakllava:latest",
+        "rating": 0.7731539975889645,
+        "size": 0.7731539975889645,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "starcoder2:latest",
+        "rating": 0.3720446506760715,
+        "size": 0.3720446506760715,
+        "category": [
+            "starcoder2"
+        ]
+    },
+    {
+        "name": "llava:latest",
+        "rating": 0.7731545760425991,
+        "size": 0.7731545760425991,
+        "category": [
+            "llama",
+            "clip"
+        ]
+    },
+    {
+        "name": "hermesmistral:latest",
+        "rating": 0.7907516160025972,
+        "size": 0.7907516160025972,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nomic-embed-text:latest",
+        "rating": -2.9144448837405568,
+        "size": -2.9144448837405568,
+        "category": [
+            "nomic-bert"
+        ]
+    },
+    {
+        "name": "hexbenjamin/memgpt-dpo-uncensored:q8_0",
+        "rating": 0.8604781166673485,
+        "size": 0.8604781166673485,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gdisney/phi-uncensored:latest",
+        "rating": 0.3299437713235903,
+        "size": 0.3299437713235903,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "gdisney/starling-lm-uncensored:latest",
+        "rating": 0.738680991043215,
+        "size": 0.738680991043215,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "gdisney/neural-chat-uncensored:latest",
+        "rating": 0.7387397513585026,
+        "size": 0.7387397513585026,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "all-minilm:latest",
+        "rating": -22.36202248532647,
+        "size": -22.36202248532647,
+        "category": [
+            "bert"
+        ]
+    },
+    {
+        "name": "codellama:70b",
+        "rating": 0.9723778066712903,
+        "size": 0.9723778066712903,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "codellama:7b",
+        "rating": 0.7193500013827558,
+        "size": 0.7193500013827558,
+        "category": "llama"
+    },
+    {
+        "name": "tinydolphin:latest",
+        "rating": -0.6863016922288472,
+        "size": -0.6863016922288472,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "duckdb-nsql:latest",
+        "rating": 0.7193491339562045,
+        "size": 0.7193491339562045,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nsfw:latest",
+        "rating": 0.9223742743647695,
+        "size": 0.9223742743647695,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nsfwstoryteller:latest",
+        "rating": 0.9223742743647695,
+        "size": 0.9223742743647695,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:70b",
+        "rating": 0.9723783781430271,
+        "size": 0.9723783781430271,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:13b",
+        "rating": 0.854246250974688,
+        "size": 0.854246250974688,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:7b",
+        "rating": 0.7194147600761807,
+        "size": 0.7194147600761807,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "orca-mini:latest",
+        "rating": 0.4576917555078759,
+        "size": 0.4576917555078759,
+        "category": "llama"
+    },
+    {
+        "name": "chris/openhermes-agent:latest",
+        "rating": 0.7907516112315884,
+        "size": 0.7907516112315884,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "openhermes-agent:latest",
+        "rating": 0.7907516112315884,
+        "size": 0.7907516112315884,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nexusraven:latest",
+        "rating": 0.8542495063920196,
+        "size": 0.8542495063920196,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "nous-hermes2-mixtral:latest",
+        "rating": 0.9593933213379519,
+        "size": 0.9593933213379519,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama-pro:latest",
+        "rating": 0.7733173722946083,
+        "size": 0.7733173722946083,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "phi:latest",
+        "rating": 0.3299429885629498,
+        "size": 0.3299429885629498,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "zephyr:latest",
+        "rating": 0.7387397270114936,
+        "size": 0.7387397270114936,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "tinyllama:latest",
+        "rating": -0.6837722904805141,
+        "size": -0.6837722904805141,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "stablelm-zephyr:latest",
+        "rating": 0.33249062744117186,
+        "size": 0.33249062744117186,
+        "category": [
+            "stablelm"
+        ]
+    },
+    {
+        "name": "phind-codellama:latest",
+        "rating": 0.943641683469084,
+        "size": 0.943641683469084,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "neural-chat:latest",
+        "rating": 0.738739619261621,
+        "size": 0.738739619261621,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "llama2:latest",
+        "rating": 0.7194147600761807,
+        "size": 0.7194147600761807,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "everythinglm:latest",
+        "rating": 0.854246141899011,
+        "size": 0.854246141899011,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-mixtral:latest",
+        "rating": 0.959391883078472,
+        "size": 0.959391883078472,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-coder:latest",
+        "rating": -0.3835437857009121,
+        "size": -0.3835437857009121,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-coder:33b",
+        "rating": 0.9429451203154474,
+        "size": 0.9429451203154474,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "wizardcoder:latest",
+        "rating": 0.719342900504305,
+        "size": 0.719342900504305,
+        "category": "llama"
+    },
+    {
+        "name": "notus:latest",
+        "rating": 0.7387397298085392,
+        "size": 0.7387397298085392,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "openhermes:latest",
+        "rating": 0.7386808257524118,
+        "size": 0.7386808257524118,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "notux:latest",
+        "rating": 0.9593932877822178,
+        "size": 0.9593932877822178,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "dolphin-phi:latest",
+        "rating": 0.3299473673158535,
+        "size": 0.3299473673158535,
+        "category": [
+            "phi2"
+        ]
+    },
+    {
+        "name": "wizard-math:latest",
+        "rating": 0.7386807426935453,
+        "size": 0.7386807426935453,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "DrunkSally:latest",
+        "rating": 0.7193424577099126,
+        "size": 0.7193424577099126,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "deepseek-llm:latest",
+        "rating": 0.7315963293994798,
+        "size": 0.7315963293994798,
+        "category": "llama"
+    },
+    {
+        "name": "yarn-mistral:latest",
+        "rating": 0.7386800690625638,
+        "size": 0.7386800690625638,
+        "category": "llama"
+    },
+    {
+        "name": "Sally:latest",
+        "rating": 0.7193424487601109,
+        "size": 0.7193424487601109,
+        "category": [
+            "llama"
+        ]
+    },
+    {
+        "name": "wizard-vicuna-uncensored:7b",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "wizardlm-uncensored:latest",
+        "rating": 0.8542267380764842,
+        "size": 0.8542267380764842,
+        "category": "llama"
+    },
+    {
+        "name": "orca2:latest",
+        "rating": 0.7193445415309809,
+        "size": 0.7193445415309809,
+        "category": "llama"
+    },
+    {
+        "name": "magicoder:latest",
+        "rating": 0.7193424914550612,
+        "size": 0.7193424914550612,
+        "category": "llama"
+    },
+    {
+        "name": "codellama:latest",
+        "rating": 0.7193500013827558,
+        "size": 0.7193500013827558,
+        "category": "llama"
+    },
+    {
+        "name": "orca2:13b",
+        "rating": 0.8542273902087836,
+        "size": 0.8542273902087836,
+        "category": "llama"
+    },
+    {
+        "name": "llama2-uncensored:latest",
+        "rating": 0.7193433102859423,
+        "size": 0.7193433102859423,
+        "category": "llama"
+    },
+    {
+        "name": "wizard-vicuna-uncensored:latest",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "Polly:latest",
+        "rating": 0.7386808125240507,
+        "size": 0.7386808125240507,
+        "category": "llama"
+    },
+    {
+        "name": "openhermes2.5-mistral:latest",
+        "rating": 0.7386808045107159,
+        "size": 0.7386808045107159,
+        "category": "llama"
+    },
+    {
+        "name": "codebooga:latest",
+        "rating": 0.943641662457532,
+        "size": 0.943641662457532,
+        "category": "llama"
+    },
+    {
+        "name": "medllama2:latest",
+        "rating": 0.7193424335014313,
+        "size": 0.7193424335014313,
+        "category": "llama"
+    },
+    {
+        "name": "sqlcoder:latest",
+        "rating": 0.7386800702709306,
+        "size": 0.7386800702709306,
+        "category": "llama"
     }
 ]
