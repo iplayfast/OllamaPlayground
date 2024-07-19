@@ -2,3 +2,8 @@
  npm install ollama
 
 bun run fs.ts
+
+to use ollama from someone elses (exposed) computer 
+export OLLAMA_ORIGINS="192.169.10.60"
+
+

@@ -137,7 +137,7 @@ const systemPrompt = `You are a helpful assistant that takes a question and find
 	"paramters": [{parameterName": "name of parameter", "parameterValue": "value of parameter"}]}, The tools are: ${toolsString}`;
 const promptandanswer = async(prompt: string) => {
 	const response = await ollama.generate({
-		model: "llama3",
+		model: "mistral",
 		system: systemPrompt,
 		prompt: prompt,
 		stream: false,
