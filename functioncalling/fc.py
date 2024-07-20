@@ -6,10 +6,12 @@ import ollama
 from typing import List, Dict, Any
 
 async def get_value_of_parameter(param_name: str, parameters: List[Dict[str, Any]]) -> Any:
-    matching_param = next((param for param in parameters if param['parameterName'] == param_name), None)
-    if matching_param:
-        return matching_param['parameterValue']
+    for param in parameters:
+        if 'parameterName' in param and isinstance(param['parameterName'], str) and param['parameterName'] == param_name:
+            return param.get('parameterValue', None)    
     return None  # or raise an exception, depending on your requirements
+
+
 
 async def weather_from_lat_lon(latitude: str, longitude: str):
     async with aiohttp.ClientSession() as session:
@@ -154,8 +156,6 @@ async def prompt_and_answer(prompt: str):
     # Extract the JSON string from the 'response' field and parse it
     try:
         response_json = json.loads(response['response'].strip())
-        print(f"Parsed response: {response_json}\n")
-        
         result = await execute_function(response_json['functionName'], response_json['parameters'])
         print(f"Result: {result}")
     except json.JSONDecodeError as e:
@@ -167,8 +167,9 @@ async def prompt_and_answer(prompt: str):
 async def generate_response(prompt: str):
     # Placeholder for language model interaction
     # Replace this with actual implementation using an appropriate Python library
-    client = ollama.Client(host='192.168.10.60:11434')
-    return client.generate(model='mistral',prompt=prompt,system=system_prompt,format="json")
+    #client = ollama.Client(host='192.168.10.60:11434
+    client = ollama.Client(host='192.168.1.15:11434')
+    return client.generate(model='llama3',prompt=prompt,system=system_prompt,format="json")
     return '{"functionName": "WeatherFromLocation", "parameters": [{"parameterName": "location", "parameterValue": "London"}]}'
 
 async def execute_function(function_name: str, parameters: List[Dict[str, Any]]):
@@ -188,15 +189,18 @@ async def execute_function(function_name: str, parameters: List[Dict[str, Any]])
             await get_value_of_parameter("longitude", parameters),
         )
     elif function_name == "CityToLatLon":
-        return await city_to_lat_lon(await get_value_of_parameter("city", parameters))
+        print(parameters)
+        return await city_to_lat_lon(
+		await get_value_of_parameter("city", parameters))
 
 async def main():
     args = sys.argv[1:]
     if not args:
-    #    print('Please provide a prompt')
+    #    print('Please provide a prompt\nfor example:\nwhat is the weather in london\nwhere is Sarnia\nWhat is at this location 51.5074456, -.1277653')
     #    return
     #    prompt = ' What is the weather in london'
-        prompt = "Where is london"
+    #    prompt = "Where is london"
+        prompt = "What is the current price of Tesla"
     else:
         prompt = ' '.join(args)
     try:
