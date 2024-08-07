@@ -2,9 +2,27 @@ import json
 import aiohttp
 import asyncio
 import sys
+import psutil
 import ollama
+import socket
 from typing import List, Dict, Any
+import socket
 
+def get_local_ip_address():
+    try:
+        # Create a socket to the localhost
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        # Connect to a dummy address (no real connection is made)
+        s.connect(('10.254.254.254', 1))
+        ip_address = s.getsockname()[0]
+    except Exception as e:
+        ip_address = 'Unable to get IP address'
+    finally:
+        s.close()
+    return ip_address
+
+host = get_local_ip_address() + ':11434' # for local server
+host = '127.0.0.1:11434'    # for localhost, modify for someother server
 async def get_value_of_parameter(param_name: str, parameters: List[Dict[str, Any]]) -> Any:
     for param in parameters:
         if 'parameterName' in param and isinstance(param['parameterName'], str) and param['parameterName'] == param_name:
@@ -168,8 +186,8 @@ async def generate_response(prompt: str):
     # Placeholder for language model interaction
     # Replace this with actual implementation using an appropriate Python library
     #client = ollama.Client(host='192.168.10.60:11434
-    client = ollama.Client(host='192.168.1.15:11434')
-    return client.generate(model='llama3',prompt=prompt,system=system_prompt,format="json")
+    client = ollama.Client(host)
+    return client.generate(model='llama3.1',prompt=prompt,system=system_prompt,format="json")
     return '{"functionName": "WeatherFromLocation", "parameters": [{"parameterName": "location", "parameterValue": "London"}]}'
 
 async def execute_function(function_name: str, parameters: List[Dict[str, Any]]):
