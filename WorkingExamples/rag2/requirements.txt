@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+ollama
+chromadb
+requests  # You might need this for making API calls in tests or your game
