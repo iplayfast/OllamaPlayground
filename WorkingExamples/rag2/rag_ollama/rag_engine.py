@@ -1,4 +1,4 @@
-# game/rag_ollama/rag_engine.py
+# rag_ollama/rag_engine.py
 import json
 import os
 from typing import Any, Dict, List, Optional
@@ -9,6 +9,10 @@ from fastapi import HTTPException
 from pydantic import BaseModel
 from typing import List, Optional, Any, Dict
 import asyncio
+import nest_asyncio
+
+nest_asyncio.apply()
+
 from ollama import AsyncClient
 
 """
@@ -441,16 +445,20 @@ class RAGEngine:
             self._loop.close()
 
     def _run_async(self, coro):
-        """Helper method to run async operations with our managed event loop"""
+        print("A. _run_async started")
         try:
-            return self._loop.run_until_complete(coro)
+            print("B. Attempting run_until_complete")
+            result = self._loop.run_until_complete(coro)
+            print("C. run_until_complete succeeded")
+            return result
         except RuntimeError as e:
+            print(f"D. RuntimeError: {str(e)}")
             if "Event loop is closed" in str(e):
+                print("E. Creating new event loop")
                 self._loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(self._loop)
                 return self._loop.run_until_complete(coro)
             raise
-
     def check_database_status(self):
         """Check database status."""
         return self.engine.check_database_status()
@@ -463,8 +471,12 @@ class RAGEngine:
     def query(self, prompt: str, system_prompt: Optional[str] = None,
              where: Optional[Dict[str, Any]] = None, **ollama_kwargs: Any) -> Dict[str, Any]:
         """Query synchronously."""
-        return self._run_async(self.engine.query(prompt, system_prompt=system_prompt, 
+        print("X. RAGEngine query started")
+        result = self._run_async(self.engine.query(prompt, system_prompt=system_prompt, 
                                                where=where, **ollama_kwargs))
+        print("Y. RAGEngine query completed")
+        return result
+        
 
     def query_structured(self, prompt: str, response_model: type[BaseModel], 
                         system_prompt: Optional[str] = None, 
