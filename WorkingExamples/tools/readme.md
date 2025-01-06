@@ -45,48 +45,11 @@ response, tool_calls = engine.chat("What is 5 plus 3?")
 print(response)
 ```
 
-### Structured Output Example
-
-```python
-from pydantic import BaseModel
-from ollama import chat
-
-class FriendInfo(BaseModel):
-    name: str
-    age: int
-    is_available: bool
-
-class FriendList(BaseModel):
-    friends: list[FriendInfo]
-
-response = chat(
-    model='llama3.1',
-    messages=[{'role': 'user', 'content': 'List my friends: John (25, busy) and Mary (23, available)'}],
-    format=FriendList.model_json_schema()
-)
-
-friends = FriendList.model_validate_json(response.message.content)
-```
-
-### Fill in the Middle Example
-
-```python
-from ollama import generate
-
-response = generate(
-    model='codellama:7b-code',
-    prompt='def hello():\n    """',
-    suffix='    return greeting',
-    options={'num_predict': 128}
-)
-```
-
 ## Examples
 
 Check the `examples` directory for more sample code:
 - `tools_examples.py`: Various function calling examples
 - `pathfinding_example.py`: A* pathfinding implementation
-- `structured_output.py`: Pydantic model output examples
 
 ## License
 
