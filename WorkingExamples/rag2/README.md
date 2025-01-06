@@ -47,6 +47,30 @@ The default configuration is stored in `rag_ollama/config.json`. You can modify 
   "response_model": "llama3.2:latest"
 }
 ```
+## Example Code for using rag with python
+```bash
+ python rag_usage_example.py
+```
+will show how to 
+1. define classes for structured results
+2. initialize the engine
+3. check to see if database is empty and if not ...
+4. 1.  create data and meta data (meta data is things that should be added with any parts of the data)
+   2.  load and index the data into the database
+5. do general queries of the database
+6. do general queries getting a structured result (one field)
+7. do structured queries getting a structured result
+
+## Example Code for using rag with an api
+```bash
+
+python run_api.py
+```
+in a different terminal
+```bash
+python api_usage_example.py
+```
+The api_usage_example.py will do the same things as the rag_usage_example.
 
 ## Usage
 
