@@ -15,24 +15,9 @@ nest_asyncio.apply()
 
 from ollama import AsyncClient
 
-"""
-RAG (Retrieval-Augmented Generation) Engine using Ollama and ChromaDB
-====================================================
-
-This engine combines document retrieval with LLM responses by:
-1. Storing document embeddings in a vector database (ChromaDB)
-2. Finding relevant document chunks for queries
-3. Using those chunks as context for LLM responses (via Ollama)
-
-Usage Examples:
-See rag_usage_example.py for complete usage examples
-"""
-""" some utility functions"""
 def split_into_paragraphs(text: str) -> List[str]:
     """Split text into paragraphs by newlines."""
-    # First clean up any excessive newlines
     cleaned_text = '\n'.join(line.strip() for line in text.split('\n') if line.strip())
-    # Split on double newlines
     paragraphs = [p.strip() for p in cleaned_text.split('\n\n') if p.strip()]
     return paragraphs
 
@@ -50,18 +35,15 @@ def merge_short_paragraphs(paragraphs: List[str], min_size: int = 100, max_size:
     current_size = 0
     
     for p in paragraphs:
-        # If this paragraph would make chunk too large, save current and start new
         if current_size + len(p) > max_size and current_chunk:
             merged.append(' '.join(current_chunk))
             current_chunk = []
             current_size = 0
         
-        # If this single paragraph is longer than max_size, split it
         if len(p) > max_size:
             sentences = [s.strip() + '.' for s in p.split('.') if s.strip()]
             for sentence in sentences:
                 if len(sentence) > max_size:
-                    # If even a sentence is too long, force-split it
                     words = sentence.split()
                     temp = []
                     temp_size = 0
@@ -81,7 +63,6 @@ def merge_short_paragraphs(paragraphs: List[str], min_size: int = 100, max_size:
             current_chunk.append(p)
             current_size += len(p)
             
-            # If we've reached minimum size and hit a natural break, save chunk
             if current_size >= min_size and (
                 p.endswith('.') or 
                 p.endswith('?') or 
@@ -91,37 +72,23 @@ def merge_short_paragraphs(paragraphs: List[str], min_size: int = 100, max_size:
                 current_chunk = []
                 current_size = 0
     
-    # Don't forget any remaining content
     if current_chunk:
         merged.append(' '.join(current_chunk))
     
-    # Add debug output
-    print("\nCreated chunks with sizes:")
-    for i, chunk in enumerate(merged):
-        print(f"\nChunk {i} ({len(chunk)} chars):")
-        print("-" * 40)
-        print(chunk)
-        print("-" * 40)
-    
     return merged
+
 def load_config(config_path=None):
     """Loads the configuration from the specified JSON file."""
     if config_path is None:
         config_path = os.path.join("rag_ollama", "config.json")
-        print(f"Trying to use configuration file {config_path}")
     try:
         with open(config_path, "r") as f:
             return json.load(f)
     except FileNotFoundError:
-        print(f"Error: Configuration file not found at {config_path}")
         return None
     except json.JSONDecodeError:
-        print(f"Error: Invalid JSON format in {config_path}")
         return None
 
-from typing import Dict, Any, Optional, List
-import chromadb
-import ollama
 from logging import getLogger
 
 logger = getLogger(__name__)
@@ -169,7 +136,7 @@ class RAGEngineAsync:
             else:                
                 self.chroma_client = chromadb.PersistentClient(path=database)
             self.chroma_client.heartbeat()
-            self.vectorstore = None  # Initialize actual collection when needed
+            self.vectorstore = None
         except Exception as e:
             raise ConnectionError(f"Failed to initialize ChromaDB: {e}")
 
@@ -238,43 +205,29 @@ class RAGEngineAsync:
                 
         except Exception as e:
             if not use_cpu:
-                print(f"Warning: Error getting embeddings: {e}, trying CPU...")
+                logger.warning(f"Error getting embeddings: {e}, trying CPU...")
                 return await self._get_embeddings(text, use_cpu=True)
             raise e
-        
+
     async def load_and_index_documents(self, documents_path: str,
         metadatas: Optional[List[Dict[str, Any]]] = None):
         """Load documents from file, split into chunks, and index them with metadata."""
         with open(documents_path, "r") as f:
             text = f.read()
 
-        # Split into paragraphs first
         paragraphs = split_into_paragraphs(text)
-        
-        # Merge short paragraphs to get reasonable chunk sizes
         chunks = merge_short_paragraphs(paragraphs)
-        
-        print(f"\nCreated {len(chunks)} chunks:")
-        for i, chunk in enumerate(chunks):
-            print(f"\nChunk {i}:")
-            print("-" * 40)
-            print(chunk[:100] + "...")  # Print first 100 chars of each chunk
-            print("-" * 40)
 
         if metadatas is not None:
-            print(f"\nMetadata provided: {len(metadatas)}")
-            print("Metadata contents:")
-            for i, meta in enumerate(metadatas):
-                print(f"Metadata {i}: {meta}")
+            logger.info(f"Processing {len(chunks)} chunks with {len(metadatas)} metadata entries")
 
-        # Generate embeddings for each chunk (do this only once per chunk)
         chunk_embeddings = []
         for chunk in chunks:
             try:
                 chunk_embedding = await self._get_embeddings(chunk)
                 chunk_embeddings.append(chunk_embedding)
             except Exception as e:
-                print(f"Warning: Error embedding chunk: {e}")
+                logger.warning(f"Error embedding chunk: {e}, trying CPU...")
                 try:
                     chunk_embedding = await self._get_embeddings(chunk, use_cpu=True)
                     chunk_embeddings.append(chunk_embedding)
@@ -284,7 +237,6 @@ class RAGEngineAsync:
         if self.vectorstore is None:
             self.vectorstore = self.chroma_client.create_collection(name="rag_collection")
 
-        # If no metadata provided, just store chunks once with empty metadata
         if metadatas is None or not metadatas:
             self.vectorstore.add(
                 embeddings=chunk_embeddings,
@@ -293,7 +245,6 @@ class RAGEngineAsync:
             )
             return
 
-        # For each chunk, store it multiple times - once for each metadata entry
         all_embeddings = []
         all_documents = []
         all_ids = []
@@ -308,10 +259,8 @@ class RAGEngineAsync:
                 all_metadatas.append(metadata)
                 doc_id += 1
 
-        print(f"\nStoring {len(all_documents)} total entries in database")
-        print(f"(Each chunk stored {len(metadatas)} times with different metadata)")
-
-        # Store everything in one batch
+        logger.info(f"Storing {len(all_documents)} total entries in database")
+        
         self.vectorstore.add(
             embeddings=all_embeddings,
             documents=all_documents,
@@ -356,7 +305,7 @@ class RAGEngineAsync:
                     **ollama_kwargs
                 )
             except Exception as e:
-                print(f"Warning: Error with default settings: {e}")
+                logger.warning(f"Error with default settings: {e}, trying CPU...")
                 try:
                     response = await self.ollamaAsyncClient.generate(
                         model=self.response_model_name,
@@ -371,8 +320,6 @@ class RAGEngineAsync:
                 
         except Exception as e:
             raise HTTPException(status_code=500, detail=f"Error during RAG query: {str(e)}")
-
-# In the RAGEngineAsync class, modify the query_structured_async method:
 
     async def query_structured_async(
         self,
@@ -400,7 +347,6 @@ class RAGEngineAsync:
             }
             
             if where is not None:
-                # Directly use the where clause without additional processing
                 query_kwargs["where"] = where
 
             results = self.vectorstore.query(**query_kwargs)
@@ -434,6 +380,7 @@ class RAGEngineAsync:
             
         except Exception as e:
             raise HTTPException(status_code=500, detail=f"Error during structured RAG query: {str(e)}")
+
 class RAGEngine:
     def __init__(self, config: Optional[Dict[str, Any]] = None, database = None):
         self.engine = RAGEngineAsync(config=config, database=database)
@@ -445,20 +392,16 @@ class RAGEngine:
             self._loop.close()
 
     def _run_async(self, coro):
-        print("A. _run_async started")
         try:
-            print("B. Attempting run_until_complete")
             result = self._loop.run_until_complete(coro)
-            print("C. run_until_complete succeeded")
             return result
         except RuntimeError as e:
-            print(f"D. RuntimeError: {str(e)}")
             if "Event loop is closed" in str(e):
-                print("E. Creating new event loop")
                 self._loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(self._loop)
                 return self._loop.run_until_complete(coro)
             raise
+
     def check_database_status(self):
         """Check database status."""
         return self.engine.check_database_status()
@@ -471,12 +414,8 @@ class RAGEngine:
     def query(self, prompt: str, system_prompt: Optional[str] = None,
              where: Optional[Dict[str, Any]] = None, **ollama_kwargs: Any) -> Dict[str, Any]:
         """Query synchronously."""
-        print("X. RAGEngine query started")
-        result = self._run_async(self.engine.query(prompt, system_prompt=system_prompt, 
+        return self._run_async(self.engine.query(prompt, system_prompt=system_prompt, 
                                                where=where, **ollama_kwargs))
-        print("Y. RAGEngine query completed")
-        return result
-        
 
     def query_structured(self, prompt: str, response_model: type[BaseModel], 
                         system_prompt: Optional[str] = None, 

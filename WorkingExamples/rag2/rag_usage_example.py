@@ -87,7 +87,7 @@ def main():
     print("\n=== Basic Lore Queries ===")
     queries = [
         "What are the five Ancient Artifacts?",
-        "Waht artifacts exist?",
+        "What artifacts exist?",
         "Tell me about the Crystal Guard",
         "What happened in the Great War of the Crystal?",
         "Who is the current ruler and what is their connection to the kingdom's history?"

@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Any, Callable, Dict, List, Optional, Union
+from typing import Any, Callable, Dict, List, Optional, Union, get_type_hints
 import inspect
 import json
 from ollama import chat, ChatResponse
@@ -16,15 +16,17 @@ class Tool:
         self.func = func
         self.name = func.__name__
         self.description = description or func.__doc__ or "No description provided"
-        sig = inspect.signature(func)
+        self.type_hints = get_type_hints(func)
+        self.sig = inspect.signature(func)
         self.type_map = {
             "number": (int, float),
+            "integer": int,
             "boolean": bool,
             "string": str,
             "array": list,
             "object": dict
         }
-        self.parameters = self._get_parameters(sig)
+        self.parameters = self._get_parameters(self.sig)
     
     def _get_parameters(self, sig: inspect.Signature) -> Dict:
         params = {
@@ -33,7 +35,7 @@ class Tool:
             "properties": {}
         }
         for name, param in sig.parameters.items():
-            param_type = param.annotation
+            param_type = self.type_hints.get(name, Any)
             if param_type == inspect.Parameter.empty:
                 param_type = Any
             params["properties"][name] = {
@@ -45,10 +47,43 @@ class Tool:
         return params
     
     def _get_json_type(self, typ: type) -> str:
+        if typ in (int, float):
+            return "number"
         for key, value in self.type_map.items():
             if typ in value if isinstance(value, tuple) else typ == value:
                 return key
         return "string"
+    
+    def convert_argument(self, name: str, value: Any) -> Any:
+        """Convert argument to the correct type based on type hints"""
+        target_type = self.type_hints.get(name, Any)
+        
+        # Handle tuple conversion first
+        if isinstance(value, str) and value.startswith('(') and value.endswith(')'):
+            try:
+                # Extract numbers from the string tuple
+                numbers = [int(x.strip()) for x in value.strip('()').split(',')]
+                return tuple(numbers)
+            except (ValueError, SyntaxError):
+                pass  # Fall through to other conversions if tuple conversion fails
+        
+        # Handle special cases
+        if target_type == bool:
+            if isinstance(value, str):
+                return value.lower() in ('true', '1', 'yes', 'y')
+            return bool(value)
+        elif target_type in (int, float):
+            if isinstance(value, str):
+                # Remove any currency symbols or other non-numeric characters
+                cleaned_value = ''.join(c for c in value if c.isdigit() or c in '.-')
+                return target_type(cleaned_value)
+            return target_type(value)
+        
+        # Default case: try direct conversion
+        try:
+            return target_type(value)
+        except (TypeError, ValueError):
+            return value
     
     def to_dict(self) -> Dict:
         return {
@@ -59,6 +94,7 @@ class Tool:
                 "parameters": self.parameters
             }
         }
+
 class TOOLSEngine:
     def __init__(self, model: str):
         self.model = model
@@ -74,16 +110,16 @@ class TOOLSEngine:
             self.tools[tool.name] = tool
 
     def chat(self, message: str) -> tuple[str, list[ToolCall]]:
-        dprint.set_level('DEBUG')  # Using string
-        dprint.info("\n=== Starting chat function ===")
-        dprint.info(f"Received message: {message}")
+        dprint.set_level('DEBUG')
+        dprint.verbose("\n=== Starting chat function ===")
+        dprint.verbose(f"Received message: {message}")
         
-        all_tool_calls = []  # Track all tool calls across chains
+        all_tool_calls = []
         current_message = message
         
         while True:  # Allow for multiple rounds of tool processing
             self.messages.append({"role": "user", "content": current_message})
-            dprint.info(f"\nProcessing message: {current_message}")
+            dprint.verbose(f"\nProcessing message: {current_message}")
             
             tool_list = [t.to_dict() if isinstance(t, Tool) else t for t in self.tools.values()]
             
@@ -94,7 +130,7 @@ class TOOLSEngine:
             )
             
             if not response.message.tool_calls:
-                dprint.info("\nNo tool calls in response")
+                dprint.verbose("\nNo tool calls in response")
                 return response.message.content, all_tool_calls
                 
             next_prompt = None
@@ -108,23 +144,17 @@ class TOOLSEngine:
                             if isinstance(tool_call.function.arguments, dict)
                             else json.loads(tool_call.function.arguments))
                         
-                        # Process arguments to convert string tuples to actual tuples
+                        dprint.verbose(f"Original args: {args}")
+                        
+                        # Process arguments with type conversion
                         processed_args = {}
-                        for key, value in args.items():
-                            if isinstance(value, str) and value.startswith('(') and value.endswith(')'):
-                                # Convert string tuple to actual tuple
-                                try:
-                                    # Extract numbers from the string tuple
-                                    numbers = [int(x.strip()) for x in value.strip('()').split(',')]
-                                    processed_args[key] = tuple(numbers)
-                                except (ValueError, SyntaxError):
-                                    # If conversion fails, keep original value
-                                    processed_args[key] = value
-                            else:
-                                processed_args[key] = value
+                        if isinstance(tool, Tool):
+                            for key, value in args.items():
+                                processed_args[key] = tool.convert_argument(key, value)
+                        else:
+                            processed_args = args
                                 
-                        dprint.info(f"Original args: {args}")
-                        dprint.info(f"Processed args: {processed_args}")
+                        dprint.verbose(f"Processed args: {processed_args}")
                         
                         if isinstance(tool, Tool):
                             result = tool.func(**processed_args)
@@ -137,60 +167,25 @@ class TOOLSEngine:
                         # Check if the result includes a prompt for the next round
                         if isinstance(result, dict) and "promptMessage" in result:
                             next_prompt = result["promptMessage"]
-                            dprint.info(f"\nTool returned new prompt: {next_prompt}")
-                            break  # Exit tool processing to handle new prompt
+                            dprint.verbose(f"\nTool returned new prompt: {next_prompt}")
+                            break
+                            
+                        self.messages.append(response.message)
+                        self.messages.append({
+                            "role": "tool",
+                            "content": str(result),
+                            "name": tool_name
+                        })
                             
                     except Exception as e:
-                        dprint.info(f"Error during tool execution: {str(e)}")
+                        dprint.verbose(f"Error during tool execution: {str(e)}")
                         raise
             
             if next_prompt:
-                current_message = next_prompt  # Continue loop with new prompt
+                current_message = next_prompt
                 continue
             else:
-                return response.message.content, all_tool_calls  # End if no new prompt
-        
-    
-            
-
-    def chatold(self, message: str) -> tuple[str, list[ToolCall]]:
-        self.messages.append({"role": "user", "content": message})
-        
-        tool_list = [t.to_dict() if isinstance(t, Tool) else t for t in self.tools.values()]
-        
-        response: ChatResponse = chat(
-            self.model,
-            messages=self.messages,
-            tools=tool_list
-        )
-        
-        if response.message.tool_calls:
-            tool_calls = []
-            for tool_call in response.message.tool_calls:
-                tool_name = tool_call.function.name
-                if tool := self.tools.get(tool_name):
-                    # Convert arguments string to dictionary
-                    if isinstance(tool_call.function.arguments, dict):
-                        args = tool_call.function.arguments
-                    else:
-                        args = json.loads(tool_call.function.arguments)
-                        
-                    if isinstance(tool, Tool):
-                        result = tool.func(**args)
-                    else:
-                        func_name = tool["function"]["name"]
-                        result = globals()[func_name](**args)
-                    
-                    tool_calls.append(ToolCall(tool_name, args, result))
-                    
-                    self.messages.append(response.message)
-                    self.messages.append({
-                        "role": "tool",
-                        "content": str(result),
-                        "name": tool_name
-                    })
-            
-            final_response = chat(self.model, messages=self.messages)
-            return final_response.message.content, tool_calls
-        
-        return response.message.content, []
+                if response.message.tool_calls:
+                    final_response = chat(self.model, messages=self.messages)
+                    return final_response.message.content, all_tool_calls
+                return response.message.content, all_tool_calls
