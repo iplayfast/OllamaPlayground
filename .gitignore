@@ -1,0 +1,6 @@
+venv/*
+pycache/*
+chromadb/*
+game_lore.txt
+__pycache__/*
+*.egg-info/*
