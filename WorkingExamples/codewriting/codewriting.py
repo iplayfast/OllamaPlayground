@@ -30,7 +30,7 @@ class PythonREPL:
         sys.stderr.write("PYTHON OUTPUT: \"" + output + "\"\n")
         return output
       
-llm = Ollama(model="mistral:7b",temperature=0.0) # model is important, mistral:7b seems good
+llm = Ollama(model="dolphin-mixtral",temperature=0.0) # model is important, mistral:7b seems good
 python_repl = Tool(
         "Python REPL",
         PythonREPL().run,

@@ -32,7 +32,7 @@ Note: Ensure you have Ollama installed and running on your system. See [Ollama i
 ### Basic Example
 
 ```python
-from tools_ollama import TOOLSEngine
+from ollama_tools import TOOLSEngine
 
 def add_numbers(a: int, b: int) -> int:
     """Add two numbers together"""
