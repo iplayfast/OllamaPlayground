@@ -1,0 +1,4 @@
+{
+  "embedding_model": "nomic-embed-text:latest",
+  "response_model": "llama3.2:latest"
+}

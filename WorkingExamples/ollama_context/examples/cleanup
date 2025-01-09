@@ -1,0 +1,9 @@
+#!/bin/bash
+rm -rf context_db
+rm -rf docs_db
+rm -rf example_db
+rm -rf game_db
+rm -rf support_db
+rm api_docs.txt
+rm game_world.txt
+rm support_kb.txt
