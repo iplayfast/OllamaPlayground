@@ -1,0 +1,27 @@
+.
+├── directory_layout.txt
+├── doc
+│   └── tools_explanation.md
+├── examples
+│   ├── code_executor
+│   │   ├── code_executor_example.py
+│   │   └── code_management_examples.py
+│   ├── pathfinding
+│   │   ├── landmarks.py
+│   │   ├── map.txt
+│   │   └── pathfinding_example.py
+│   └── tools_examples.py
+├── lib
+│   ├── debugprint.py
+│   ├── display_utils.py
+│   ├── __init__.py
+│   └── pathfinding.py
+├── ollama_tools
+│   ├── code_executor.py
+│   ├── __init__.py
+│   └── tools_engine.py
+├── readme.md
+├── requirements.txt
+└── setup.py
+
+7 directories, 18 files
