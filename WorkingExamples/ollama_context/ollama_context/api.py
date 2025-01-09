@@ -1,30 +1,21 @@
 # ollama_context/api.py
-from typing import Any, Dict, List, Optional
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel, create_model
-
+from pydantic import BaseModel, Field
+from typing import Optional, Dict, Any, List
+from contextlib import asynccontextmanager
 from .engine import ContextEngine, load_config
+import logging
+import json
 
-# Request Models
+# Models for request/response
 class InitRequest(BaseModel):
     embedding_model: Optional[str] = None
     response_model: Optional[str] = None
-    mode: Optional[str] = "auto"
+    mode: str = "auto"
     database: Optional[str] = None
-    log_level: Optional[int] = None
-    enable_http_logs: Optional[bool] = None
+    log_level: int = logging.INFO
 
-class DatabaseStatusResponse(BaseModel):
-    status: str
-    message: Optional[str] = None
-    num_documents: Optional[int] = None
-    contexts: Optional[List[str]] = None
-
-class ContextTemplate(BaseModel):
-    template: str
-    variables: Dict[str, str]
-
-class RegisterContextRequest(BaseModel):
+class ContextRequest(BaseModel):
     name: str
     template: str
     variables: Dict[str, str]
@@ -38,194 +29,177 @@ class QueryRequest(BaseModel):
     context_name: Optional[str] = None
     system_prompt: Optional[str] = None
     where: Optional[Dict[str, Any]] = None
-    options: Optional[Dict[str, Any]] = {}
     mode: Optional[str] = None
-    model_schema: Optional[Dict[str, Any]] = None
+    options: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class StructuredQueryRequest(BaseModel):
+    prompt: str
+    model_schema: Dict[str, Any]
+    context_name: Optional[str] = None
+    system_prompt: Optional[str] = None
+    where: Optional[Dict[str, Any]] = None
+    mode: Optional[str] = None
+    options: Optional[Dict[str, Any]] = Field(default_factory=dict)
 
 class IndexRequest(BaseModel):
     documents_path: str
     metadatas: Optional[List[Dict[str, Any]]] = None
 
-app = FastAPI(title="Context API", description="API for Context-Enhanced Generation using Ollama")
-context_engine = None
+# Global engine instance
+engine: Optional[ContextEngine] = None
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Manage the API lifecycle."""
+    yield
+    if engine:
+        await engine.cleanup()
+
+# Create FastAPI app with lifespan management
+app = FastAPI(lifespan=lifespan)
 
 @app.post("/init")
-async def initialize_engine(request_body: InitRequest):
+async def initialize_engine(request: InitRequest):
     """Initialize the context engine with specified configuration."""
-    global context_engine
-    try:
-        config = load_config()
-        if request_body.embedding_model:
-            config["embedding_model"] = request_body.embedding_model
-        if request_body.response_model:
-            config["response_model"] = request_body.response_model
-            
-        context_engine = ContextEngine(
-            config=config,
-            mode=request_body.mode,
-            log_level=request_body.log_level,
-            enable_http_logs=request_body.enable_http_logs,
-            database=request_body.database
-        )
-        return {"status": "success", "message": "Context engine initialized"}
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
-@app.get("/status", response_model=DatabaseStatusResponse)
-async def check_status():
-    """Check status of the engine, including documents and contexts."""
-    if not context_engine:
-        raise HTTPException(status_code=400, detail="Context engine not initialized")
+    global engine
     
-    try:
-        # Get vectorstore status if available
-        if hasattr(context_engine.engine, 'vectorstore'):
-            collection_data = context_engine.engine.vectorstore.get() if context_engine.engine.vectorstore else None
-            num_documents = len(collection_data['ids']) if collection_data else 0
-        else:
-            num_documents = 0
-            
-        # Get registered contexts if available
-        contexts = list(context_engine.engine.contexts.keys()) if hasattr(context_engine.engine, 'contexts') else []
+    config = load_config()
+    if request.embedding_model:
+        config["embedding_model"] = request.embedding_model
+    if request.response_model:
+        config["response_model"] = request.response_model
         
-        return {
-            "status": "active",
-            "num_documents": num_documents,
-            "contexts": contexts
-        }
+    try:
+        engine = ContextEngine(
+            config=config,
+            mode=request.mode,
+            log_level=request.log_level,
+            database=request.database
+        )
+        return {"status": "initialized", "config": config}
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail=f"Initialization failed: {str(e)}")
 
 @app.post("/index")
-async def index_documents(request_body: IndexRequest):
-    """Index documents for retrieval."""
-    if not context_engine:
-        raise HTTPException(status_code=400, detail="Context engine not initialized")
+async def index_documents(request: IndexRequest):
+    """Index documents with optional metadata."""
+    if not engine:
+        raise HTTPException(status_code=400, detail="Engine not initialized")
     
     try:
-        context_engine.load_and_index_documents(
-            request_body.documents_path,
-            request_body.metadatas
+        await engine.engine.index_documents(
+            request.documents_path,
+            metadatas=request.metadatas
         )
-        return {"status": "success", "message": "Documents indexed successfully"}
+        return {"status": "success", "message": "Documents indexed"}
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail=f"Indexing failed: {str(e)}")
 
 @app.post("/context/register")
-async def register_context(request_body: RegisterContextRequest):
+async def register_context(request: ContextRequest):
     """Register a new context template."""
-    if not context_engine:
-        raise HTTPException(status_code=400, detail="Context engine not initialized")
+    if not engine:
+        raise HTTPException(status_code=400, detail="Engine not initialized")
     
     try:
-        context_engine.register_context(
-            request_body.name,
-            request_body.template,
-            request_body.variables
+        engine.register_context(
+            request.name,
+            request.template,
+            request.variables
         )
-        return {
-            "status": "success",
-            "message": f"Context '{request_body.name}' registered successfully"
-        }
+        return {"status": "success", "message": f"Context '{request.name}' registered"}
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail=f"Context registration failed: {str(e)}")
 
 @app.post("/context/update")
-async def update_context(request_body: UpdateContextRequest):
+async def update_context(request: UpdateContextRequest):
     """Update variables for an existing context."""
-    if not context_engine:
-        raise HTTPException(status_code=400, detail="Context engine not initialized")
+    if not engine:
+        raise HTTPException(status_code=400, detail="Engine not initialized")
     
     try:
-        context_engine.update_context_variables(
-            request_body.name,
-            request_body.variables
+        engine.update_context_variables(
+            request.name,
+            request.variables
         )
-        return {
-            "status": "success",
-            "message": f"Context '{request_body.name}' updated successfully"
-        }
+        return {"status": "success", "message": f"Context '{request.name}' updated"}
     except KeyError:
-        raise HTTPException(
-            status_code=404,
-            detail=f"Context '{request_body.name}' not found"
-        )
+        raise HTTPException(status_code=404, detail=f"Context '{request.name}' not found")
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail=f"Context update failed: {str(e)}")
 
 @app.post("/query")
-async def query(request_body: QueryRequest):
-    """Generate a response using the specified context and/or retrieved documents."""
-    if not context_engine:
-        raise HTTPException(status_code=400, detail="Context engine not initialized")
+async def query(request: QueryRequest):
+    """Generate a response using the context engine."""
+    if not engine:
+        raise HTTPException(status_code=400, detail="Engine not initialized")
     
     try:
-        # Use the engine's async methods directly
-        result = await context_engine.engine.query(
-            prompt=request_body.prompt,
-            context_name=request_body.context_name,
-            system_prompt=request_body.system_prompt,
-            where=request_body.where,
-            mode=request_body.mode,
-            **request_body.options
+        response = await engine.engine.query(
+            prompt=request.prompt,
+            system_prompt=request.system_prompt,
+            context_name=request.context_name,
+            where=request.where,
+            mode=request.mode,
+            **request.options
         )
-        return result
+        return response
     except KeyError as e:
         raise HTTPException(status_code=404, detail=str(e))
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail=f"Query failed: {str(e)}")
 
 @app.post("/query/structured")
-async def query_structured(request_body: QueryRequest):
-    """Generate a structured response using the specified context and/or retrieved documents."""
-    if not request_body.model_schema:
-        raise HTTPException(status_code=400, detail="model_schema is required")
-    
-    if not context_engine:
-        raise HTTPException(status_code=400, detail="Context engine not initialized")
+async def query_structured(request: StructuredQueryRequest):
+    """Generate a structured response using the context engine."""
+    if not engine:
+        raise HTTPException(status_code=400, detail="Engine not initialized")
     
     try:
-        schema = request_body.model_schema
-        properties = schema.get('properties', {})
+        # Create a base Pydantic model class with the schema
+        class DynamicResponseModel(BaseModel):
+            model_config = {
+                "extra": "allow",
+                "json_schema_extra": request.model_schema
+            }
+            
+            @classmethod
+            def model_json_schema(cls):
+                return request.model_schema
         
-        type_mapping = {
-            'string': str,
-            'array': List[str] if schema.get('items', {}).get('type') == 'string' else List
-        }
-        
-        model_fields = {
-            field: (type_mapping[props['type']], ...) 
-            for field, props in properties.items()
-        }
-        
-        DynamicModel = create_model('DynamicModel', **model_fields)
-        
-        # Use the engine's async methods directly
-        result = await context_engine.engine.query_structured_async(
-            prompt=request_body.prompt,
-            response_model=DynamicModel,
-            context_name=request_body.context_name,
-            system_prompt=request_body.system_prompt,
-            where=request_body.where,
-            mode=request_body.mode,
-            **request_body.options
+        response = await engine.engine.query_structured(
+            prompt=request.prompt,
+            response_model=DynamicResponseModel,
+            context_name=request.context_name,
+            system_prompt=request.system_prompt,
+            where=request.where,
+            mode=request.mode,
+            **request.options
         )
-        return result.model_dump()
+        
+        # Convert to dict and return
+        return json.loads(response.model_dump_json())
+        
+    except KeyError as e:
+        raise HTTPException(status_code=404, detail=str(e))
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail=f"Structured query failed: {str(e)}")
 
-@app.post("/index")
-async def index_documents(request_body: IndexRequest):
-    """Index documents for retrieval."""
-    if not context_engine:
-        raise HTTPException(status_code=400, detail="Context engine not initialized")
+@app.get("/status")
+async def get_status():
+    """Get the current status of the engine."""
+    if not engine:
+        return {"status": "uninitialized"}
     
     try:
-        # Use the engine's async methods directly
-        await context_engine.engine.index_documents(
-            request_body.documents_path,
-            request_body.metadatas
-        )
-        return {"status": "success", "message": "Documents indexed successfully"}
+        db_status = engine.check_database_status()
+        contexts = list(engine.engine.contexts.keys()) if hasattr(engine.engine, 'contexts') else []
+        
+        return {
+            "status": "running",
+            "mode": engine.engine.mode,
+            "database": db_status,
+            "registered_contexts": contexts
+        }
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail=f"Status check failed: {str(e)}")
