@@ -1,0 +1,16 @@
+ollama_context/
+├── examples/
+│   ├── basic_usage_example.py
+│   ├── api_usage_example.py
+│   └── structured_query_example.py
+├── ollama_context/
+│   ├── __init__.py
+│   ├── api.py
+│   ├── config.json
+│   └── engine.py
+├── tests/
+│   └── test_engine.py
+├── README.md
+├── requirements.txt
+├── run_api.py
+└── setup.py
