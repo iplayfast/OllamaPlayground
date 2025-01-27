@@ -2,6 +2,10 @@ from ollama_tools.tools_engine import TOOLSEngine
 from typing import List, Dict, Optional, Any
 import math
 from datetime import datetime, timedelta
+from pathlib import Path
+import json
+import os
+import sys
 
 def calculate_compound_interest(principal: float, rate: float, time: float, compounds_per_year: int = 12) -> Dict[str, float]:
     """
@@ -121,10 +125,70 @@ def calculate_mortgage(principal: float, annual_rate: float, years: int) -> Dict
         "total_payment": round(total_payment, 2),
         "total_interest": round(total_interest, 2)
     }
+def find_config_file() -> Optional[Path]:
+    """
+    Look for a config.json file in current and parent directories.
+    
+    Returns:
+        Optional[Path]: Path to the first config file found, or None
+    """
+    current_dir = Path.cwd()
+    
+    # Check current directory
+    local_config = current_dir / 'config.json'
+    if local_config.exists():
+        return local_config
+        
+    # Check parent directory
+    parent_config = current_dir.parent / 'config.json'
+    if parent_config.exists():
+        return parent_config
+        
+    return None
+
+def get_model_name() -> str:
+    """
+    Get the model name with following precedence:
+    1. Local config.json
+    2. Parent directory config.json
+    3. OLLAMA_MODEL environment variable
+    4. Default to 'llama2'
+    
+    Returns:
+        str: Model name to use with Ollama
+    """
+    # Try to find and load config file
+    config_file = find_config_file()
+    if config_file:
+        try:
+            with open(config_file) as f:
+                config = json.load(f)
+                if 'model' in config:
+                    print(f"Using model from config file: {config_file}")
+                    return config['model']
+        except json.JSONDecodeError:
+            print(f"Warning: Invalid JSON in {config_file}")
+        except Exception as e:
+            print(f"Warning: Error reading {config_file}: {e}")
+    
+    # Try environment variable
+    env_model = os.environ.get('OLLAMA_MODEL')
+    if env_model:
+        print("Using model from environment variable OLLAMA_MODEL")
+        return env_model
+    
+    # Default model
+    print("Using default model: llama2")
+    return 'llama3.2'
 
 def main():
     # Initialize the engine
-    engine = TOOLSEngine("llama3.2")
+    #engine = TOOLSEngine("granite3.1-dense")
+    model_name = get_model_name()
+    print(f"\nUsing model: {model_name}")
+        
+    # Initialize the engine with chosen model
+    engine = TOOLSEngine(model_name)
     
     # Add all tools
     tools = [
