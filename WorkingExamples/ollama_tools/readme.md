@@ -88,8 +88,39 @@ cd OllamaPlayground/WorkingExamples/ollama_tools/examples
 # Ensure config.json is present or set OLLAMA_MODEL
 python tools_examples.py
 ```
+### Basic Tools Usage
+```bash
+cd OllamaPlayground/WorkingExamples/ollama_tools/examples
+python tools_examples.py
+```
+This demonstrates:
+- Compound interest calculations
+- Password validation
+- Temperature conversion
+- Text analysis
+- Mortgage calculations
 
-### Basic Example
+### Pathfinding Implementation
+```bash
+cd OllamaPlayground/WorkingExamples/ollama_tools/examples/pathfinding
+python pathfinding_example.py
+```
+Demonstrates:
+- A* pathfinding algorithm
+- Interactive map navigation
+- Landmark-based routing
+
+### Code Execution
+```bash
+cd OllamaPlayground/WorkingExamples/ollama_tools/examples/code_executor
+python code_executor_example.py
+```
+Demonstrates:
+- Secure code execution
+- Code validation
+- Integration testing
+
+### Basic Usage Example
 
 ```python
 from ollama_tools import TOOLSEngine
@@ -116,7 +147,7 @@ response, tool_calls = engine.chat("What is 5 plus 3?")
 print(response)
 ```
 
-## Examples
+## Documentation
 
 The `examples` directory contains several implementations:
 - `tools_examples.py`: Various function calling examples including:
@@ -134,20 +165,6 @@ MIT License
 
 Copyright (c) 2025
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
