@@ -20,8 +20,8 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # Install development version from source
-git clone https://github.com/yourusername/tools-ollama.git
-cd tools-ollama
+git clone https://github.com/iplayfast/ollama_tools.git
+cd ollama_tools
 pip install -e .
 ```
 
